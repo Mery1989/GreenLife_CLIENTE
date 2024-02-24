@@ -1,10 +1,13 @@
-import './App.css'
+import './App.css';
+import BasicExample from './components/EventCard/EventCard';
+import EventListPage from './pages/EventListPages/EventListPages';
 
 function App() {
   return (
-    <h1>
-      Hola Chicos
-    </h1>
+    <>
+    <BasicExample/>
+    <EventListPage/>
+    </>
   )
 }
 
