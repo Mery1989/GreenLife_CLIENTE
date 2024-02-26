@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Navigator } from "./components/Navigator/Navigator.jsx";
-import { Footer } from "./components/Footer/Footer.jsx";
+import Navigator from "./components/Navigator/Navigator";
+import Footer from "./components/Footer/Footer";
 /*
 importamos bootstarp en la app
 Si lo situo en un sitio previo a mi reenderizado de css
