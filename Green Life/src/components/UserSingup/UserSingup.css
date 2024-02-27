@@ -1,9 +1,10 @@
 Form {
-    max-width: 1000px;
-    margin: 0 auto;
-    font-family: Pompiere, sans-serif;
-    font-weight: bold; 
-  }
+  max-width: 768px;
+  margin: 0 auto;
+  font-family: Pompiere, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5%; 
+}
   
   .form-control {
     background-color: #d3cece; 
@@ -22,18 +23,18 @@ Form {
 
 
 #validationCustom01{
-    width: 300px; 
+    width: 200px; 
     
     
   }
 #validationCustom04 {
-  width: 290px; 
+  width: 200px; 
   margin-left: auto;
   
 }
 #validationCustomUsername {
-    width: 230px;
-    margin-left: auto; 
+    width: 200px;
+    padding-left: 100px; 
   }
 
   #validationCustomGender {
