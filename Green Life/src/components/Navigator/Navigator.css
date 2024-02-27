@@ -1,0 +1,24 @@
+:root{
+    --primario: #347B1C;
+    --footer: #118639;
+    --blanco: #FFFFFF;
+    --oscuro: #063012;
+    --negro: #000000;
+}
+
+.bg-body-tertiary {
+    text-transform: uppercase; 
+}
+
+.me-auto {
+    font-weight: 700;
+
+}
+
+.reserved {
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px;
+    background-color: var(--oscuro);  
+    font-size: 10px;
+}
