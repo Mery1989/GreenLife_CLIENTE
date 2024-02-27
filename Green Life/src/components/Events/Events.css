@@ -1,0 +1,27 @@
+/*.ml-n4 {
+    margin-left: -4rem;
+  }
+  .card {
+    max-width: 580px;
+    max-height: 368px;
+  }
+  .cart-title {
+    color: #323334;
+  }
+  @media (max-width: 768px) {
+    .card-body.ml-n4 {
+      margin: 0;
+    }
+    .img-fluid {
+      max-height: 18rem;
+    }
+    
+    .row {
+      background-color: #bababa;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+  */
+  

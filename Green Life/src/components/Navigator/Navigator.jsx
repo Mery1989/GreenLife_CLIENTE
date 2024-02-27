@@ -11,7 +11,7 @@ function Navigator(){
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
                 <Navbar.Brand href="#icon" >
-                    <Image src="public/Logo_Green_Life.png" alt="Green Life Logo" fluid />
+                    <Image src="/Logo_Green_Life.png" alt="Green Life Logo" fluid />
                     Green life
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
