@@ -1,0 +1,55 @@
+Form {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Pompiere, sans-serif;
+    font-weight: bold; 
+  }
+  
+  .form-control {
+    background-color: #d3cece; 
+  }
+  
+  
+  textarea.form-control {
+    background-color: #d3cece; 
+  }
+
+  Form.bootstrap .invalid-feedback {
+    display: block;
+    color: #dc3545;
+  }
+  
+
+
+#validationCustom01{
+    width: 300px; 
+    
+    
+  }
+#validationCustom04 {
+  width: 290px; 
+  margin-left: auto;
+  
+}
+#validationCustomUsername {
+    width: 230px;
+    margin-left: auto; 
+  }
+
+  #validationCustomGender {
+    margin-left: 110%; 
+    width: 210%;
+    background-color: #d3cece;  
+  }
+  #validationCustom05 {
+   
+    width: 210%;
+    background-color: #d3cece;  
+  }
+  #button {
+    width: 100%;
+    background-color: #006400; 
+    color: #fff;  
+    height: 60px;
+    font-size: 25px;
+}
