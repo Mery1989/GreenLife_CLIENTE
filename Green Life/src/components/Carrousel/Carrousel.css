@@ -10,6 +10,15 @@
     margin-left: -170px;
     
   }
+  .boton{
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    font-weight: bold;
+    width: 124px;
+    height: 48px;
+    border-color: #ffffff;
+  }
 
   @media only screen and (max-width: 800px) and (min-width: 600px) {
     

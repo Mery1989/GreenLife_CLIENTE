@@ -22,7 +22,7 @@ return (
           <Carousel.Caption className="right-content">
             <p>Ven a nuesto curso!</p>
             <h3>Pienso, luego existo</h3>
-            <button>Visitanos</button>
+            <button className='boton'>Visitanos</button>
           </Carousel.Caption>
         </div>
       </Carousel.Item>

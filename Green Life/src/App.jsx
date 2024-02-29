@@ -15,7 +15,7 @@ function App() {
     <Events />
     <Plants />
     <Calculator/>
-    <EventListPage/>
+   
     
     </>
   )

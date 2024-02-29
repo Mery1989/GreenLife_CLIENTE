@@ -1,17 +1,20 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './Calculator.css';
 
 function Calculator() {
   return (
-    <Card style={{ width: '30rem' }}>
-      <Card.Img variant="top" src="./../../../public/Huella.jpg" />
-      <Card.Body >
-        <Card.Title>QUIERES CALCULAR TU
+    <Card className="huella">
+      <Card.Img className="imghuella"variant="top" src="./../../../public/huellaMobile.jpg" />
+      <Card.Body  >
+        <div className="cuerpo">
+        <Card.Title className="title"><br></br>QUIERES CALCULAR TU
 HUELLA DE CARBONO</Card.Title>
-        <Card.Text>
+        <Card.Text className="txt">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         </Card.Text>
-        <Button variant="primary">Registrate</Button>
+        </div>
+        <Button variant="primary"className="button2">Registrate</Button>
       </Card.Body>
     </Card>
   );
