@@ -1,24 +1,14 @@
-:root{
-    --primario: #347B1C;
-    --footer: #118639;
-    --blanco: #FFFFFF;
-    --oscuro: #063012;
-    --negro: #000000;
-}
-
-.bg-body-tertiary {
+.custom-text{
     text-transform: uppercase; 
 }
 
-.me-auto {
-    font-weight: 700;
-
+.bold-text {
+    font-weight:bold;
 }
 
-.reserved {
-    color: var(--blanco);
-    text-align: center;
-    padding: 10px;
-    background-color: var(--oscuro);  
-    font-size: 10px;
+.custom-border-container {
+    border-top: 2px solid; /* Ajusta el grosor según tus preferencias */
+    border-bottom: 2px solid; /* Ajusta el grosor según tus preferencias */
+ 
 }
+
