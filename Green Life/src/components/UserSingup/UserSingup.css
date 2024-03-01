@@ -1,56 +1,49 @@
-Form {
-  max-width: 768px;
-  margin: 0 auto;
-  font-family: Pompiere, sans-serif;
-  font-weight: bold;
-  margin-bottom: 5%; 
-}
-  
-  .form-control {
-    background-color: #d3cece; 
-  }
-  
-  
-  textarea.form-control {
-    background-color: #d3cece; 
-  }
-
-  Form.bootstrap .invalid-feedback {
-    display: block;
-    color: #dc3545;
-  }
-  
 
 
-#validationCustom01{
-    width: 200px; 
-    
-    
-  }
-#validationCustom04 {
-  width: 200px; 
-  margin-left: auto;
-  
-}
-#validationCustomUsername {
-    width: 200px;
-    padding-left: 100px; 
-  }
-
-  #validationCustomGender {
-    margin-left: 110%; 
-    width: 210%;
-    background-color: #d3cece;  
-  }
-  #validationCustom05 {
-   
-    width: 210%;
-    background-color: #d3cece;  
-  }
   #button {
     width: 100%;
     background-color: #006400; 
     color: #fff;  
     height: 60px;
     font-size: 25px;
+}
+.check{
+  margin-left: 3%;
+}
+  
+@media (max-width: 768px) {
+Form {
+  margin-left: 5%; 
+  margin-right: 5%; 
+  background-color: #ffffff;
+  }
+ 
+}
+@media (min-width: 769px) and (max-width: 1494px){
+  Form {
+    max-width: 776px;
+    margin: 0 auto;
+   
+    font-weight: bold;
+    margin-bottom: 5%; 
+    background-color: #ffffff;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+}
+@media (min-width: 1494px){
+  Form {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    font-weight: bold;
+    margin-bottom: 5%; 
+    background-color: #ffffff;
+    font-size: 25px;
+    align-items: center;
+    
+  }
+
 }

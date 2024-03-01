@@ -5,15 +5,48 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import './UserSingup.css';
-
+import axios from 'axios';
 function FormSingup() {
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    }
+    else {
+      event.preventDefault();
+
+      const formData = {
+        name: form.elements.validationCustom01.value,
+        email: form.elements.validationCustom04.value,
+        username: form.elements.validationCustomUsername.value,
+        password: form.elements.formBasicPassword.value,
+        datebirth: form.elements.validationCustom05.value,
+        gender: form.elements.validationCustomGender.value, 
+        location: '',//OJO HAY QUE PONER LOCATION
+        description: form.elements.descripcion.value,
+      };
+
+      try {
+        // Enviar la solicitud POST con axios
+        const response = await axios.post('http://localhost:5005/api/user/signup', formData, {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+        // Manejar la respuesta según sea necesario
+        console.log('Respuesta del servidor:', response.data);
+
+        // Reiniciar el estado de validación del formulario
+        setValidated(false);
+      } catch (error) {
+        console.error('Error al enviar el formulario:', error.response.data);
+
+        // Puedes manejar los errores o mostrar un mensaje al usuario
+      }
     }
 
     setValidated(true);
@@ -76,22 +109,22 @@ function FormSingup() {
             <option>Otro</option>
           </Form.Select>
         </Form.Group>
-      </Row>
       <Form.Group className="mb-3" controlId="descripcion">
         <Form.Label>Descripción:</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
       <Form.Group className="mb-3" >
-        <Form.Check
+        <Form.Check className="check"
           required
           label="Aceptar términos y condiciones"
           feedback="Debes aceptar términos y condiciones antes de continuar."
           feedbackType="invalid"
         />
-      </Form.Group>
+      </Form.Group></Row>
       <Button id="button" type="submit">Registrarse</Button>
     </Form>
   );
+  
 }
 
 export default FormSingup;
