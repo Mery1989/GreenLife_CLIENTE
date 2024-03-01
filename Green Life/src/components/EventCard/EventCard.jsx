@@ -1,20 +1,17 @@
-import {Button, Card} from 'react-bootstrap';
+import {Card} from "react-bootstrap";
 
-
-function BasicExample() {
+const EventCard = ({date, location, name, image}) => {
   return (
-    <Card style={{ width:'288px', height:'363px' }}>
-      <Card.Img variant="top" src="pexels-mark-glancy-1564506.jpg" />
+    <Card>
+      <Card.Img src={image} />
+
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Text>{date}</Card.Text>
+        <Card.Text>{location}</Card.Text>
+        <Card.Title>{name}</Card.Title>
       </Card.Body>
     </Card>
   );
 }
 
-export default BasicExample;
+export default EventCard;
