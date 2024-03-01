@@ -1,12 +1,13 @@
 import "./Navigator.css";
 import { Container, Nav, Navbar, Image, NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom"
 
 const Navigator =() => {
   return (
-    <nav>
+    <>
       <Navbar expand="lg" className="bg-body-tertiary custom-text">
         <Container>
-          <NavLink to="/">
+          <Link to="/" className="link">
             <Navbar.Brand as="span">
               <Image
                 src="public/Logo_Green_Life.png"
@@ -15,41 +16,45 @@ const Navigator =() => {
               />
               Green life
             </Navbar.Brand>
-          </NavLink>
+          </Link>
 
           <Nav className="ml-auto">
-            <NavLink to="login">
+            <Link to="login" className="link">
               <NavLink as="span">
                 <h3>logo usuario</h3>
               </NavLink>
-            </NavLink>
+            </Link>
           </Nav>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Container>
       </Navbar>
 
+      {/*  por si teniais dudas de como se comentaba*/}
+
       <Navbar expand="lg" className="bg-body-tertiary custom-text">
         <Container className="custom-border-container">
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto bold-text">
-              <NavLink to="/huellaCarbono">
+              <Link to="/huellaCarbono" className="link">
                 <Nav.Link as="span" className="mx-5 V">Huella de carbono</Nav.Link>
-              </NavLink>
-              <NavLink to="/eventos">
-                <Nav.Link as="span" className="mx-5">Eventos</Nav.Link>
-              </NavLink>
-              <NavLink to="/esquejes">
+              </Link>
+              <Link to="/eventos" className="link">
+                <Nav.Link as="span" >Eventos</Nav.Link>
+              </Link>
+              <Link to="/esquejes" className="link">
                 <Nav.Link as="span" className="mx-5">Esquejes</Nav.Link>
-              </NavLink>
-              <NavLink to="/comunidad">
+              </Link>
+              <Link to="/comunidad"className="link">
                 <Nav.Link as="span" className="mx-5">Comunidad</Nav.Link>
-              </NavLink>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </nav>
+  
+    </>
+ 
   );
 }
 export default Navigator;
