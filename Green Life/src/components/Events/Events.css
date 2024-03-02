@@ -64,12 +64,12 @@
     }
     .btn-primary{
       font-size: 18px;
-      background-color: rgba(255, 255, 255, 0);
-      color: #000;
-      font-weight: bold;
+      color: #ffffff;
+      font-weight: normal;
       width: 124px;
       height: 48px;
-      border-color: #000;
+      background-color: #063012;
+      border-radius: 0;
     }
   }
   @media (min-width: 1000px) {
@@ -80,7 +80,7 @@
       
     }
     .EventTitle{
-      margin-top: -160px;
+      margin-top: -200px;
     }
     
     .row {
@@ -94,11 +94,11 @@
     .btn-primary{
       font-size: 18px;
       background-color: rgba(255, 255, 255, 0);
-      color: #000;
+      color: #ffffff;
       font-weight: bold;
       width: 124px;
       height: 48px;
-      border-color: #000;
+      background-color: #063012;
     }
   }
   @media (min-width: 1400px) {
