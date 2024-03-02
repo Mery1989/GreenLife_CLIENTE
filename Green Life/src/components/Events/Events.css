@@ -17,9 +17,7 @@
   }
   
   @media (max-width: 768px) {
-    .card-body.ml-n4 {
-      
-    }
+  
     .img-fluid {
       max-height: 100%;
       width: 100%;
@@ -82,7 +80,7 @@
       
     }
     .EventTitle{
-      margin-top: -250px;
+      margin-top: -160px;
     }
     
     .row {
