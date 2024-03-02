@@ -1,4 +1,5 @@
 import './App.css';
+
 import Navigator from "./components/Navigator/Navigator";
 import Footer from "./components/Footer/Footer";
 import AppRoutes from './routes/AppRoutes';
@@ -10,6 +11,8 @@ function App() {
     <AppRoutes />
     <Footer></Footer>
    
+
+
     
     </>
   )
