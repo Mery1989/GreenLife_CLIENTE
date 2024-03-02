@@ -12,6 +12,7 @@ const EventList = () => {
         .getAllEvents()
         .then(({ data }) => setEventos(data))
         .catch((err) => console.log(err));
+
     }, []);
   
 return(
