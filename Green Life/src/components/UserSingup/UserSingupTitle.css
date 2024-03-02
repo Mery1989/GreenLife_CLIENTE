@@ -63,3 +63,24 @@
     
   }
 }
+@media (min-width: 2000px) {
+  .imageForm {
+      display: block; 
+      width: 367px; 
+    height: 439px; 
+    margin-left: 400px;
+  }
+
+
+
+}
+@media (min-width: 2000px) {
+  .imageForm {
+      display: block; 
+      width: 367px; 
+    height: 439px; 
+    margin-left: 400px;
+  }
+
+
+}

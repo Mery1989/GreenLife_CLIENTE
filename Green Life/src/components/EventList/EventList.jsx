@@ -3,9 +3,12 @@ import {Row, Col } from "react-bootstrap";
 import eventService from "../../services/EventService";
 import EventCard from "../../components/EventCard/EventCard";
 
+
 const EventList = () => {
 
+
     let [event, setEventos] = useState([]);
+
 
     useEffect(() => {
       eventService
@@ -14,7 +17,7 @@ const EventList = () => {
         .catch((err) => console.log(err));
 
     }, []);
-  
+ 
 return(
 
 
@@ -23,6 +26,7 @@ return(
           return ( <Col md={4} key={event._id}> <EventCard {...event}/></Col>);
         })}
       </Row>
+
 
 )
 }

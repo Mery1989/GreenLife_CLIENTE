@@ -23,5 +23,41 @@ margin-top: 30px;
 .huella{
     height: 650px;
     width: 430px;
-    margin-bottom: 103%;
+    margin-bottom: 450px; /*quitar cuando se arregle footer*/
 }
+@media only screen and  (min-width: 765px){
+    .title{
+   
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+     } 
+     .txt{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .huella{
+        height: 510px;
+        width: 700px;
+        margin-bottom: 0px;
+    }
+    .imghuella{
+        height: 265px;
+        width: 508px;
+        margin-left: 305px;
+        content: url('./../../../public/huella.jpg');
+    }
+    
+.cuerpo{
+    margin-top: -280px;
+    background-color: rgba(130, 255, 130, 0.5);
+    width: 490px;
+    height: 265px;
+    margin-left: -200px;
+    
+  }
+  .button2{
+    margin-top: -100px;
+    
+    }}

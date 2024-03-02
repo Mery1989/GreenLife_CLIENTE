@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Calculator.css';
+import { Link } from "react-router-dom";
 
 function Calculator() {
   return (
@@ -14,10 +15,11 @@ HUELLA DE CARBONO</Card.Title>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         </Card.Text>
         </div>
-        <Button variant="primary"className="button2">Registrate</Button>
+        <Link to="/singup"><Button variant="primary"className="button2">Registrate</Button></Link>
       </Card.Body>
     </Card>
   );
 }
+
 
 export default Calculator;

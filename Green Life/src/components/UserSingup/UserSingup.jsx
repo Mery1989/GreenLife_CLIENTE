@@ -6,6 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import './UserSingup.css';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 function FormSingup() {
   const [validated, setValidated] = useState(false);
 
@@ -30,22 +31,19 @@ function FormSingup() {
       };
 
       try {
-        // Enviar la solicitud POST con axios
+      
         const response = await axios.post('http://localhost:5005/api/user/signup', formData, {
     headers: {
       'Content-Type': 'application/json'
     }
   });
 
-        // Manejar la respuesta según sea necesario
         console.log('Respuesta del servidor:', response.data);
 
-        // Reiniciar el estado de validación del formulario
         setValidated(false);
       } catch (error) {
         console.error('Error al enviar el formulario:', error.response.data);
 
-        // Puedes manejar los errores o mostrar un mensaje al usuario
       }
     }
 
@@ -121,7 +119,7 @@ function FormSingup() {
           feedbackType="invalid"
         />
       </Form.Group></Row>
-      <Button id="button" type="submit">Registrarse</Button>
+      <Link to="/"><Button id="button" type="submit">Registrarse</Button></Link>
     </Form>
   );
   
