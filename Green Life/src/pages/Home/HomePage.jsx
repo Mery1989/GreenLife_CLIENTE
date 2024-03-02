@@ -11,8 +11,8 @@ const HomePage = () => {
       <Container>
         <Events />
         <Plants />
-        <Calculator />
       </Container>
+      <Calculator />
     </>
   );
 };
