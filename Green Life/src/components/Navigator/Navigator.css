@@ -1,32 +1,29 @@
-
-.link{
-text-decoration: none;
+h1 {
+  font-family: Pompiere;
+  font-size: 28px;
+  text-transform: uppercase;
 }
-.footer2{
-    border-top: 2px solid; /* Ajusta el grosor según tus preferencias */
-    border-bottom: 2px solid; /* Ajusta el grosor según tus preferencias */
-    margin-left: 69px;
-    margin-right: 69px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.moveComponent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.navInferior {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  
+}
+
+.navInferior .link:hover {
+    color: #063012; 
     font-weight: bold;
-}
-
-.NavContainer{
-    
-    margin-left: 15%;
-    
-}
-
-
-
-.custom-text{
-    text-transform: uppercase; 
-}
-
-.bold-text {
-    font-weight:bold;
-}
-
-
+  }
 

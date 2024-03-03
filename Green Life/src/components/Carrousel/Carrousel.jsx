@@ -37,7 +37,7 @@ return (
       <Carousel.Item>
         <div className="carousel-item-container">
           <div >
-            <img className='carrouselImage' src="https://res.cloudinary.com/ddtolhmab/image/upload/v1709377385/1_pa7zm2.jpg" />
+            <img className='carrouselImage' src="https://res.cloudinary.com/ddtolhmab/image/upload/v1709456706/flores_jqxd26.png" />
           </div>
           
         </div>
