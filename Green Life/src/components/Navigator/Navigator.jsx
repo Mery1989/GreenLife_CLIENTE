@@ -1,38 +1,37 @@
 import "./Navigator.css";
 import { Container, Nav, Navbar, Image, NavLink } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom"
 
-const Navigator = () => {
+function Navigator() {
   return (
-    <nav>
-      <Navbar expand="lg" className="bg-body-tertiary custom-text">
-        <Container>
-          <Link to="/" className="link">
+    <>
+      <nav>
+        <Navbar expand="lg">
+          <Container>
             <Navbar.Brand href="#icon">
+            <Link to= "/" className="moveComponent link">
               <Image
                 src="public/Logo_Green_Life.png"
                 alt="Green Life Logo"
-                fluid
               />
-              Green life
+              <h1>Green life</h1>
+              </Link>
             </Navbar.Brand>
-          </Link>
 
-          <Nav className="ml-auto">
-            <Link to="/" className="link">
-              <NavLink as="span">
+            <Nav className="ml-auto">
+              <NavLink href="#span">
+                <Link to="/"></Link>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-user-circle"
+                  className="icon icon-tabler icon-tabler-user-circle"
                   width="40"
                   height="40"
                   viewBox="0 0 24 24"
-                  stroke-width="1"
+                  strokeWidth="1"
                   stroke="#000000"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
@@ -40,33 +39,37 @@ const Navigator = () => {
                   <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                 </svg>
               </NavLink>
-            </Link>
-          </Nav>
+            </Nav>
+          </Container>
+        </Navbar>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <Nav className="mx-auto bold-text">
-              <Link to="/eventos" className="link">
-                <Nav.Link as="span" className="mx-5 V">
+        <Navbar expand="lg">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="justify-content-end"/>
+          <Container className=" justify-content-end custom-border-container navInferior ">
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mx-auto bold-text ">
+              <Link to= "/huella" className="link">
+                <Nav.Link href="#span">
                   Huella de carbono
                 </Nav.Link>
-              </Link>
-              <Link to="/eventos" className="link">
-                <Nav.Link as="span" className="mx-5">
+                </Link>
+                <Link to= "/eventos" className="link">
+                <Nav.Link href="#span">
                   Eventos
                 </Nav.Link>
-              </Link>
-              <Link to="/eventos" className="link">
-                <Nav.Link as="span" className="mx-5">
-                  Esquejes
+                </Link>
+                <Link to= "/esquejes" className="link">
+                <Nav.Link href="#span">
+                Esquejes
                 </Nav.Link>
-              </Link>
-              <Link to="/eventos" className="link">
-                <Nav.Link as="span" className="mx-5">
-                  Comunidad
+                </Link>
+                <Link to= "/esquejes" className="link">
+                <Nav.Link href="#span">
+                Esquejes
                 </Nav.Link>
               </Link>
             </Nav>
-          </Navbar.Toggle>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
                 <Navbar>
@@ -78,7 +81,23 @@ const Navigator = () => {
 
                     <Nav className='ml-auto'>
                         <NavLink href='#login'>
-                            <FontAwesomeIcon icon="fa-thin fa-user" /> 
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="icon icon-tabler icon-tabler-user-circle"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1"
+                          stroke="#000000"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                          <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                          <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                        </svg>
                         </NavLink>
                     </Nav>
                     
@@ -100,6 +119,7 @@ const Navigator = () => {
             </Navbar>
             
         </nav>
+        </>
     );
 }
 export default Navigator;
