@@ -11,9 +11,8 @@ function Footer() {
                     <Col>
                         <Link to = "/" className='link'><p>Green Life</p></Link>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>DIRECCION
-                            +12 3 0000 0000
-                            contact@greenlife.com</p>
+                        <p>DIRECCION</p>
+                        <p>+12 3 0000 0000 contact@greenlife.com</p>    
                     </Col>
 
                     <Col>
@@ -33,24 +32,16 @@ function Footer() {
                     <Col className='proximos-eventos'>
                     <Link to = "/" className='link'><p>Próximos eventos</p></Link>
                     </Col>
+                </Container>                
 
-
-
-                </Container>
-                
-
-                <Container className='tamano'>
+                <Container>
                     <Col className='orden-iconos'>
-                     <img src='.\public\facebook.png'/>
-                     <img src='.\public\gorjeo.png'/>
-                     <img src='.\public\instagram.png'/>
-                     <img src='.\public\youtube.png'/>
-                                    
-                            
-     
+                     <img src='\public\icons8-facebook-nuevo-50.png'/>
+                     <img src='public\icons8-twitter-50.png'/>
+                     <img src='\public\icons8-instagram-50.png'/>
+                     <img src='\public\icons8-youtube-50.png'/>                                                           
                     </Col>
                 </Container>
-
             </div>
 
             <div className='footer2'>

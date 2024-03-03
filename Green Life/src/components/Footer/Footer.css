@@ -34,21 +34,16 @@ img {
     padding: 10px 0;
 }
 
-.tamano {
-    padding-right: 40%;
-}
 
 .link {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-
 }
 
 .link1 {
     text-decoration: none;
     color: #fff;
-
 }
 
 @media screen and (max-width: 960px) {
