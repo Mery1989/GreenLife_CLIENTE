@@ -19,8 +19,8 @@ return (
           <div >
             <img className="left-content" src="./../../../public/image1_carousel.png" />
           </div>
-          <Carousel.Caption className="right-content">
-            <p>Ven a nuesto curso!</p>
+          <Carousel.Caption className="right-content ">
+            <p className='texto'>Ven a nuesto curso!</p>
             <h3>Pienso, luego existo</h3>
             <button className='boton'>Visitanos</button>
           </Carousel.Caption>
