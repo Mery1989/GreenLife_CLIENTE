@@ -16,25 +16,25 @@ function Footer() {
                     </Col>
 
                     <Col>
-                    <Link to = "/" className='link'><p>Eventos</p></Link>
+                    <Link to = "/" className='link1'><p>Eventos</p></Link>
                     </Col>
 
                     <Col>
-                        <Link to = "/" className='link'><p>Esquejes</p></Link>
+                        <Link to = "/" className='link1'><p>Esquejes</p></Link>
                     </Col>
 
                     <Col>
                         <p>MÁS INFO</p>
-                        <Link to = "/" className='link1'><p>Sobre nosotros</p></Link>
-                        <Link to = "/" className='link1'><p>Contáctanos</p></Link>
+                        <Link to = "/" className='link2'><p>Sobre nosotros</p></Link>
+                        <Link to = "/" className='link2'><p>Contáctanos</p></Link>
                     </Col>
 
                     <Col className='proximos-eventos'>
-                    <Link to = "/" className='link'><p>Próximos eventos</p></Link>
+                    <Link to = "/" className='link1'><p>Próximos eventos</p></Link>
                     </Col>
                 </Container>                
 
-                <Container>
+                <Container className='tamano'>
                     <Col className='orden-iconos'>
                      <img src='\public\icons8-facebook-nuevo-50.png'/>
                      <img src='public\icons8-twitter-50.png'/>

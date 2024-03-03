@@ -15,14 +15,13 @@
 }
 .orden-iconos {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content:space-between;
-
+    
 }
 
 img {
-    width: 5%;
-    color: #fff;
+    width: 4%;
 }
 
 .footer2 {
@@ -34,16 +33,29 @@ img {
     padding: 10px 0;
 }
 
+.tamano {
+    padding-right: 50%;
+}
 
 .link {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .link1 {
     text-decoration: none;
     color: #fff;
+    text-transform: uppercase;
+
+}
+
+.link2 {
+    text-decoration: none;
+    color: #fff;
+
 }
 
 @media screen and (max-width: 960px) {
