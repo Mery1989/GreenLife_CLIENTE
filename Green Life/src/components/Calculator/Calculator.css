@@ -1,7 +1,6 @@
 
 .cuerpo{
     margin-top: -600px;
-    background-blend-mode: 300px;
     background-color: rgba(130, 255, 130, 0.5);
     width: 430px;
     height: 300px;
@@ -15,7 +14,10 @@
 }
 .button2{
 margin-top: 30px;
-
+background-color:#4C8787;
+color: white;
+font-weight: normal;
+border-radius: 0;
 }
 .txt{
     margin-top: 60px;
@@ -24,5 +26,81 @@ margin-top: 30px;
 .huella{
     height: 650px;
     width: 430px;
-    margin-bottom: 103%;
+    margin-bottom: 450px; /*quitar cuando se arregle footer*/
 }
+@media only screen and  (min-width: 765px){
+    .title{
+   
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+     } 
+     .txt{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .huella{
+        height: 510px;
+        width: 700px;
+        margin-bottom: 0px;
+    }
+    .imghuella{
+        height: 265px;
+        width: 508px;
+        margin-left: 305px;
+        content: url('./../../../public/huella.jpg');
+        border-radius:0 36px  36px 0;
+    }
+    
+.cuerpo{
+    margin-top: -280px;
+    background-color: rgba(130, 255, 130, 0.5);
+    width: 490px;
+    height: 265px;
+    margin-left: -200px;
+    border-radius:36px 0 0 36px;
+  }
+  .button2{
+    margin-top: -100px;
+    
+    }}
+    @media only screen and  (min-width: 1400px){
+        .title{
+       
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+         } 
+         .txt{
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+        }
+        .huella{
+            height: 510px;
+            width: 700px;
+            margin-bottom: 250px; /*quitar cuando se arregle footer*/
+        }
+        .imghuella{
+            height: 430px;
+            width: 1000px;
+            margin-left: 880px;
+            content: url('./../../../public/huella.jpg');
+        }
+        
+    .cuerpo{
+        margin-top: -446px;
+        background-color: rgba(130, 255, 130, 0.5);
+        width: 910px;
+        height: 430px;
+        margin-left: -45px;
+        
+      }
+      .button2{
+        margin-top: -300px;
+        margin-left: 300px;
+        
+        
+        }}  
+    

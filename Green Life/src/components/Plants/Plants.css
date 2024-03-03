@@ -1,0 +1,36 @@
+.img2 {
+    opacity: .6;
+    
+    
+  }
+@media (min-width: 769px) {
+  
+   
+    .PlantTitle{
+      margin-top: -200px;
+    }
+
+   
+  }
+  @media (min-width: 1000px) {
+  
+   
+    .PlantTitle{
+      margin-top: -300px;
+    }
+   
+  }
+  @media (min-width: 1400px) {
+  .card2{
+    margin-top: -800px;
+  }
+  .card-large {
+    width: 45%;
+    margin-right: 2.5%; 
+  }
+  .PlantTitle{
+    margin-top: -180px;
+  }
+
+  }
+   

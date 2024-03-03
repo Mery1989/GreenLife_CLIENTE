@@ -1,49 +1,59 @@
 .carousel-item-container {
-    display: flex;
-    background-color: green;
-    height: 500px;
-    overflow: hidden;
-  }
-  
+  display: flex;
+  background-color: green;
+  height: 500px;
+  overflow: hidden;
+}
+
+.left-content {
+  width: 200%;
+  margin-left: -170px;
+}
+.boton {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  font-weight: bold;
+  width: 124px;
+  height: 48px;
+  border-color: #ffffff;
+}
+
+.carrouselImage {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display:block;
+  margin: 0 auto;
+  object-position: center;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
   .left-content {
-    width: 200%;
-    margin-left: -170px;
-    
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 801px) {
+  .left-content {
+    width: 100%;
   }
   .boton{
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0);
     color: #ffffff;
-    font-weight: bold;
+    font-weight: normal;
     width: 124px;
     height: 48px;
-    border-color: #ffffff;
+    background-color: #063012;
+    border-radius: 0;
   }
-
-  @media only screen and (max-width: 800px) and (min-width: 600px) {
-    
-    .left-content {
-      width: 80%;
-
-    }
+}
+@media only screen and (min-width: 1001px) {
+  .left-content {
+    width: 100%;
   }
-  @media only screen and (max-width: 1000px) and (min-width: 801px) {
-    
-    .left-content {
-      width: 100%;
+}
 
-    }
-  }
-  @media only screen and  (min-width: 1001px) {
-    
-    .left-content {
-      width: 100%;
-      
-
-    }
-  }
-  
-  /*
+/*
   .left-content img {   
     height: 100%;
     object-fit: cover;
