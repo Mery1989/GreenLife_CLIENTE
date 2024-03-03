@@ -16,38 +16,52 @@
    text-align: center;
 }
 .button2{
-margin-top: 30px;
-background-color:#4C8787;
-color: white;
-font-weight: normal;
-border-radius: 0;
+    margin-top: 30px;
+    background-color:#4C8787;
+    color: white;
+    font-weight: normal;
+    border-radius: 0;
+    margin-left: 30px
 }
 .txt{
     margin-top: 60px;
     font-size: 16px;
+    margin-left:60px;
 }
 .huella{
     height: 650px;
-    width: 667px;
+   /* width: 667px; */
     margin-bottom: 450px; /*quitar cuando se arregle footer*/
 }
-@media only screen and  (min-width: 765px){
+
+@media only screen and (min-width: 375px) and (max-width: 1439px){
     .title{
-       
         font-size: 25px;
         font-weight: bold;
         text-align: center;
-     
      } 
      .txt{
         margin-top: 20px;
         margin-left: 20px;
         font-size: 16px;
     }
+    .imghuella{
+        width: 100%;
+    }
+    .cuerpo{
+        width: 100%;
+        margin: -440px 0 0;
+        height: 240px;
+    }
+    .button2{
+        margin-top: 10px;
+    }
+    /*
     .huella{
         height: 510px;
         width: 700px;
         margin-bottom: 0px;
+
     }
     .imghuella{
         height: 265px;
@@ -57,95 +71,106 @@ border-radius: 0;
         border-radius:0 36px  36px 0;
     }
     
-.cuerpo{
-    margin-top: -280px;
-    background-color: rgba(130, 255, 130, 0.5);
-    width: 490px;
-    height: 265px;
-    margin-left: -200px;
-    border-radius:36px 0 0 36px;
-  }
-  .button2{
-    margin-top: -100px;
-    
-    }}
-    @media only screen and  (min-width: 1000px){
+    .cuerpo{
+        margin-top: -280px;
+        background-color: rgba(130, 255, 130, 0.5);
+        width: 490px;
+        height: 265px;
+        margin-left: -200px;
+        border-radius:36px 0 0 36px;
+    }
+    */
+}
+@media only screen and (min-width: 1440px) and (max-width: 1919px){
         .title{
-           
+           padding-top: 150px;
             font-size: 25px;
             font-weight: bold;
             text-align: center;
          
          } 
          .txt{
-            margin-top: 20px;
-            margin-left: 20px;
-            font-size: 16px;
+            margin: 20px 50px 20px 50px;
+            font-size: 20px;
+            padding-left:60px;
         }
         .huella{
             height: 510px;
-            width: 700px;
+            width: 650px;
             margin-bottom: 0px;
+            max-height: 510px;
+            margin-bottom: 40px;
+            margin-left: 30px;       
         }
         .imghuella{
-            height: 265px;
-            width: 683px;
-            margin-left: 653px;
+          /*  height: 265px;
+            width: 720px; */
+            height: 510px;
+            margin-left: 720px;
             content: url('./../../../public/huella.jpg');
             border-radius:0 36px  36px 0;
+
         }
-        
-    .cuerpo{
-        margin-top: -281px;
-        background-color: rgba(130, 255, 130, 0.5);
-        width: 683px;
-        height: 265px;
-        margin-left: -45px;
-        border-radius:36px 0 0 36px;
-      }
-      .button2{
-        margin-top: -200px;
-        margin-left: 200px;
-        
-        }}
-    @media only screen and  (min-width: 1400px){
-        .title{
-            width: 378.61px;
-            font-size: 35px;
-            font-weight: bold;
-            text-align: center;
-            margin-left: 220px;
-         } 
-         .txt{
-            width: 378.61px;
-            margin-top: 50px;
-            margin-left: 230px;
-            font-size: 20px;
-        }
-        .huella{
+        .cuerpo{
+            margin-top: -525px;
+            background-color: rgba(130, 255, 130, 0.5);
             height: 510px;
-            width: 700px;
-            margin-bottom: 250px; /*quitar cuando se arregle footer*/
+            width: 720px;
+            /*width: 683px;*/
+        /* height: 265px; */
+            /*margin-left: -45px;*/
+            border-radius:36px 0 0 36px;
         }
-        .imghuella{
-            height: 430px;
-            width: 700px;
-            margin-left:700px;
-            content: url('./../../../public/huella.jpg');
+        .button2{
+            margin-top: -200px;
+            margin-left: 200px;
+            
+            }
         }
-        
-    .cuerpo{
-        margin-top: -446px;
-        background-color: rgba(130, 255, 130, 0.5);
-        width: 730px;
-        height: 430px;
-        margin-left: -45px;
-        
-      }
-      .button2{
-        margin-top: -300px;
-        margin-left: 300px;
-        
-        
-        }}  
+@media only screen and (min-width: 1920px){
+    .title{
+        padding-top: 150px;
+         font-size: 25px;
+         font-weight: bold;
+         text-align: center;
+      
+      } 
+      .txt{
+         margin: 20px 50px 20px 50px;
+         font-size: 20px;
+         padding-left:60px;
+     }
+     .huella{
+         height: 510px;
+         width: 650px;
+         margin-bottom: 0px;
+         max-height: 510px;
+         margin-bottom: 40px;
+         margin-left: 300px;       
+     }
+     .imghuella{
+       /*  height: 265px;
+         width: 720px; */
+         height: 510px;
+         margin-left: 720px;
+         content: url('./../../../public/huella.jpg');
+         border-radius:0 36px  36px 0;
+
+     }
+     .cuerpo{
+         margin-top: -525px;
+         background-color: rgba(130, 255, 130, 0.5);
+         height: 510px;
+         width: 720px;
+         /*width: 683px;*/
+     /* height: 265px; */
+         /*margin-left: -45px;*/
+         border-radius:36px 0 0 36px;
+     }
+     .button2{
+         margin-top: -200px;
+         margin-left: 200px;
+         
+         }
+    }  
     
