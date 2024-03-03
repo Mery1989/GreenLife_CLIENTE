@@ -1,0 +1,88 @@
+
+.footer1{
+    background-color: #118639;
+    margin: 0;
+    color: #fff;
+    padding: 25px;
+ 
+}   
+
+.orden{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.orden-iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+img {
+    width: 5%;
+    color: #fff;
+}
+
+.footer2 {
+    background-color: #063012;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding: 10px 0;
+}
+
+.tamano {
+    padding-right: 40%;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.link1 {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+@media screen and (max-width: 960px) {
+    .orden{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .footer1{
+        margin: 0;
+        padding: 25px;
+     
+    } 
+}
+ 
+@media screen and (max-width: 380px) {
+    .orden{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer1{
+        background-color: #118639;
+        margin: 0;
+        color: #fff;
+        padding: 25px;
+     
+    } 
+
+    .proximos-eventos {
+        display: none;
+    }
+}
+ 
