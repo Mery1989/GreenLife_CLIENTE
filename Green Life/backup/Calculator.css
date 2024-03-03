@@ -2,12 +2,9 @@
 .cuerpo{
     margin-top: -600px;
     background-color: rgba(130, 255, 130, 0.5);
-    width: 667px;
+    width: 430px;
     height: 300px;
     margin-left: -16px;
-}
-.imghuella{
-    width: 667px;
 }
 .title{
    
@@ -28,7 +25,7 @@ border-radius: 0;
 }
 .huella{
     height: 650px;
-    width: 667px;
+    width: 430px;
     margin-bottom: 450px; /*quitar cuando se arregle footer*/
 }
 @media only screen and  (min-width: 765px){
@@ -129,15 +126,15 @@ border-radius: 0;
         }
         .imghuella{
             height: 430px;
-            width: 700px;
-            margin-left:700px;
+            width: 900px;
+            margin-left: 975px;
             content: url('./../../../public/huella.jpg');
         }
         
     .cuerpo{
         margin-top: -446px;
         background-color: rgba(130, 255, 130, 0.5);
-        width: 730px;
+        width: 910px;
         height: 430px;
         margin-left: -45px;
         

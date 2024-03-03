@@ -1,22 +1,22 @@
-import { useState } from 'react';
+
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import './UserSingup.css';
-import axios from 'axios';
-import { Link } from "react-router-dom";
+import { useState, useEffect  } from 'react';
+import userService from "../../services/UserService";
 function FormSingup() {
   const [validated, setValidated] = useState(false);
-
-  const handleSubmit = async(event) => {
+  const [redirectTo, setRedirectTo] = useState(null);
+  const redirectUrl = '/';
+  const handleSubmit = async (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-    }
-    else {
+    } else {
       event.preventDefault();
 
       const formData = {
@@ -25,40 +25,39 @@ function FormSingup() {
         username: form.elements.validationCustomUsername.value,
         password: form.elements.formBasicPassword.value,
         datebirth: form.elements.validationCustom05.value,
-        gender: form.elements.validationCustomGender.value, 
-        location: '',//OJO HAY QUE PONER LOCATION
+        gender: form.elements.validationCustomGender.value,
+        location: '', // OJO HAY QUE PONER LOCATION
         description: form.elements.descripcion.value,
       };
 
       try {
-      
-        const response = await axios.post('http://localhost:5005/api/user/signup', formData, {
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-
-        console.log('Respuesta del servidor:', response.data);
+  
+        await userService.sendSingup(formData);
 
         setValidated(false);
+        setRedirectTo(redirectUrl);
       } catch (error) {
         console.error('Error al enviar el formulario:', error.response.data);
-
       }
     }
 
     setValidated(true);
   };
+  useEffect(() => {
+    if (redirectTo) {
+      window.location.href = redirectTo; // Realiza la redirección
+    }
+  }, [redirectTo]);
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form className="nombre"noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
           <Form.Label>Nombre completo:</Form.Label>
           <Form.Control
             required
             type="text"
-            placeholder="nombre"
+            placeholder="Nombre y apellido"
           />
           <Form.Control.Feedback type="invalid">
               Introduce tu nombre y apellidos
@@ -67,7 +66,7 @@ function FormSingup() {
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom04">
           <Form.Label>Email:</Form.Label>
-          <Form.Control type="email" placeholder="State" required />
+          <Form.Control type="email" placeholder="Email" required />
           <Form.Control.Feedback type="invalid">
             Email no válido
           </Form.Control.Feedback>
@@ -78,7 +77,7 @@ function FormSingup() {
             <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
             <Form.Control
               type="text"
-              placeholder="Username"
+              placeholder="Nombre de usuario"
               aria-describedby="inputGroupPrepend"
               required
             />
@@ -89,7 +88,7 @@ function FormSingup() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Contraseña:</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" placeholder="Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un carácter especial. " />
       </Form.Group>
       <Form.Group as={Col} md="3" controlId="validationCustom05">
           <Form.Label>Fecha de nacimiento:</Form.Label>
@@ -107,10 +106,23 @@ function FormSingup() {
             <option>Otro</option>
           </Form.Select>
         </Form.Group>
-      <Form.Group className="mb-3" controlId="descripcion">
+        <Form.Group as={Col} md="4" controlId="validationCustom03">
+          <Form.Label>Localización</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Introduce tu localización"
+          />
+          <Form.Control.Feedback type="invalid">
+              Introduce tu Localización
+            </Form.Control.Feedback>
+       
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="descripcion">
         <Form.Label>Descripción:</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
+      
       <Form.Group className="mb-3" >
         <Form.Check className="check"
           required
@@ -119,7 +131,7 @@ function FormSingup() {
           feedbackType="invalid"
         />
       </Form.Group></Row>
-      <Link to="/"><Button id="button" type="submit">Registrarse</Button></Link>
+      <Button id="button" type="submit">Registrarse</Button>
     </Form>
   );
   
