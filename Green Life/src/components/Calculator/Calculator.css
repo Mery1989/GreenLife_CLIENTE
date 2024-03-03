@@ -1,8 +1,8 @@
 
 .cuerpo{
-    margin-top: -600px;
+    /*margin-top: -600px;*/
     background-color: rgba(130, 255, 130, 0.5);
-    width: 430px;
+    /*width: 50%;*/
     height: 300px;
     margin-left: -16px;
 }
@@ -13,21 +13,26 @@
    text-align: center;
 }
 .button2{
-margin-top: 30px;
-background-color:#4C8787;
-color: white;
-font-weight: normal;
-border-radius: 0;
+    margin-top: 30px;
+    background-color:#4C8787;
+    color: white;
+    font-weight: normal;
+    border-radius: 0;
 }
 .txt{
     margin-top: 60px;
     font-size: 16px;
 }
 .huella{
+    border-radius: 2em;
+
     height: 650px;
-    width: 430px;
-    margin-bottom: 450px; /*quitar cuando se arregle footer*/
+    /*width: 430px;*/
+    width:100%;
+    margin-bottom: 10em;
+    /*margin-bottom: 450px; *//*quitar cuando se arregle footer*/
 }
+/*
 @media only screen and  (min-width: 765px){
     .title{
        
@@ -66,7 +71,7 @@ border-radius: 0;
     margin-top: -100px;
     
     }}
-    @media only screen and  (min-width: 1000px){
+@media only screen and  (min-width: 1000px){
         .title{
            
             font-size: 25px;
@@ -105,42 +110,54 @@ border-radius: 0;
         margin-left: 200px;
         
         }}
-    @media only screen and  (min-width: 1400px){
+*/
+@media only screen and (min-width: 1440px){
+
+        
         .title{
-            width: 378.61px;
+            /*width: 378.61px;*/
             font-size: 35px;
             font-weight: bold;
             text-align: center;
-            margin-left: 220px;
+            /*margin-left: 220px;*/
          } 
          .txt{
-            width: 378.61px;
+            /*width: 378.61px;*/
             margin-top: 50px;
-            margin-left: 230px;
+            /*margin-left: 230px;*/
             font-size: 20px;
         }
         .huella{
-            height: 510px;
-            width: 700px;
-            margin-bottom: 250px; /*quitar cuando se arregle footer*/
+            display: inline-block;
+            /*height: 510px;*/
+            height: 100%;
+            width: 100%;
+            /*width: 700px;*/
+            /*margin-bottom: 250px;*/ /*quitar cuando se arregle footer*/
+        }
+        .huella .card-body{
+            display: inline;
+            height: 100%;
+            width: 100%;
         }
         .imghuella{
-            height: 430px;
-            width: 900px;
-            margin-left: 975px;
-            content: url('./../../../public/huella.jpg');
+            width: 20%;
+            /*height: 430px;*/
+            /*width: 900px;*/
+            /*margin-left: 975px;*/
+            /*content: url('./../../../public/huella.jpg');*/
         }
         
     .cuerpo{
-        margin-top: -446px;
+        /*margin-top: -446px;*/
         background-color: rgba(130, 255, 130, 0.5);
-        width: 910px;
+        /*width: 910px;*/
         height: 430px;
-        margin-left: -45px;
+        /*margin-left: -45px;*/
         
       }
       .button2{
-        margin-top: -300px;
+        /*margin-top: -300px;*/
         margin-left: 300px;
         
         
