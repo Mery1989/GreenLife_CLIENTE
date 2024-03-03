@@ -26,7 +26,7 @@ function FormSingup() {
         password: form.elements.formBasicPassword.value,
         datebirth: form.elements.validationCustom05.value,
         gender: form.elements.validationCustomGender.value,
-        location: '', // OJO HAY QUE PONER LOCATION
+        location: form.elements.validationCustom06.value, 
         description: form.elements.descripcion.value,
       };
 
@@ -106,7 +106,7 @@ function FormSingup() {
             <option>Otro</option>
           </Form.Select>
         </Form.Group>
-        <Form.Group as={Col} md="4" controlId="validationCustom03">
+        <Form.Group as={Col} md="4" controlId="validationCustom06">
           <Form.Label>Localización</Form.Label>
           <Form.Control
             required
