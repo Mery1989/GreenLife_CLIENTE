@@ -36,10 +36,10 @@ function Footer() {
 
                 <Container className='tamano'>
                     <Col className='orden-iconos'>
-                     <img src='\public\icons8-facebook-nuevo-50.png'/>
-                     <img src='public\icons8-twitter-50.png'/>
-                     <img src='\public\icons8-instagram-50.png'/>
-                     <img src='\public\icons8-youtube-50.png'/>                                                           
+                     <img alt="logo facebook" src='\public\icons8-facebook-nuevo-50.png'/>
+                     <img alt="logo twitter"src='public\icons8-twitter-50.png'/>
+                     <img alt="logo instagram"src='\public\icons8-instagram-50.png'/>
+                     <img alt="logo youtube"src='\public\icons8-youtube-50.png'/>                                                           
                     </Col>
                 </Container>
             </div>

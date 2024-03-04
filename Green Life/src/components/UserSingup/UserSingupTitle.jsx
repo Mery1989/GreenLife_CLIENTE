@@ -8,7 +8,7 @@ function UserSingupTitle() {
         Formulario de registro 
       </h1>
     
-    <img className="imageForm" src="./../../../public/userform.png" />
+    <img alt="maceta con hojas verdes"className="imageForm" src="./../../../public/userform.png" />
       
     </div>
   );

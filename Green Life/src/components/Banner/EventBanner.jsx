@@ -5,7 +5,7 @@ function BannerEvent() {
     <>
       <div className="hero">
 
-     <img className="bannerImage" src="https://res.cloudinary.com/ddtolhmab/image/upload/v1709287621/pexels-surene-palvie-2062061_3_fn7reb.jpg" />
+     <img className="bannerImage" alt="logo de green life"src="https://res.cloudinary.com/ddtolhmab/image/upload/v1709287621/pexels-surene-palvie-2062061_3_fn7reb.jpg" />
         <div className="hero-text">
           <h1>
             <b>UNETE A NUESTROS EVENTOS</b>

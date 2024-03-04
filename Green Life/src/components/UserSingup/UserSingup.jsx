@@ -45,7 +45,7 @@ function FormSingup() {
   };
   useEffect(() => {
     if (redirectTo) {
-      window.location.href = redirectTo; // Realiza la redirección
+      window.location.href = redirectTo; 
     }
   }, [redirectTo]);
 

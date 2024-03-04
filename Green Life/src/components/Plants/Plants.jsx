@@ -5,7 +5,7 @@ function Plants(){
      <div className="card rounded-5 overflow-hidden card-large"  >
       <div className="row">
         <div className="col-md-6 col-xs-12">
-        <img
+        <img alt="varias macetas con pequeños cactus"
             className="img-fluid img2"
             src="./../../../public/PlantsImage.jpg"
             

@@ -6,7 +6,7 @@ function Events(){
       <div className="row">
         <div className="col-md-6 col-xs-12">
           <img
-            className="img-fluid"
+            className="img-fluid" alt="botella de plástico aplatada  con fondo amarillo"
             src="./../../../public/EventsImage.jpg"
             
 
