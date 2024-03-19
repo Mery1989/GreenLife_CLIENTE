@@ -1,0 +1,36 @@
+
+
+  #button {
+    width: 100%;
+    background-color: #292F36; 
+    color: #fff;  
+    height: 60px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.formulario{
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.contactForm input {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+ 
+.contactForm textarea {
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+@media (min-width: 769px) {
+  
+  #button {
+    width: 25%;
+   float: right;
+   
+}
+
+
+}
