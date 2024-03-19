@@ -32,6 +32,7 @@ function Footer() {
                     <Col className='proximos-eventos'>
                     <Link to = "/" className='link1'><p>Próximos eventos</p></Link>
                     </Col>
+                    
                 </Container>                
 
                 <Container className='tamano'>
@@ -39,7 +40,8 @@ function Footer() {
                      <img alt="logo facebook" src='\public\icons8-facebook-nuevo-50.png'/>
                      <img alt="logo twitter"src='public\icons8-twitter-50.png'/>
                      <img alt="logo instagram"src='\public\icons8-instagram-50.png'/>
-                     <img alt="logo youtube"src='\public\icons8-youtube-50.png'/>                                                           
+                     <img alt="logo youtube"src='\public\icons8-youtube-50.png'/>        
+                                                                       
                     </Col>
                 </Container>
             </div>
