@@ -1,0 +1,11 @@
+.bot {
+  display: flex;
+  justify-content: center; 
+}
+
+.imageMap {
+  width: 95%; 
+  margin-bottom: 10%;
+  max-width: 1199px;
+  max-height: 501px;
+}
