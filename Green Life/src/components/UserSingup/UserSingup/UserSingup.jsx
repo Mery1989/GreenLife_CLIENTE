@@ -6,7 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import './UserSingup.css';
 import { useState, useEffect  } from 'react';
-import userService from "../../services/UserService";
+import userService from "../../../services/UserService";
 function FormSingup() {
   const [validated, setValidated] = useState(false);
   const [redirectTo, setRedirectTo] = useState(null);
