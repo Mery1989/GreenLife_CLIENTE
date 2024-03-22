@@ -1,0 +1,29 @@
+.containerDescription {
+    width: auto;
+    height: 430px;
+    margin-top: 145px;
+}
+.column{
+    height: 215px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 80px;
+  
+}
+.titlesDescription {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+}
+
+.titleGreen {
+    color: #5B8266;
+}
+
+.contentDescription {
+    font-size: 1.3rem;
+    
+}
+
+
+
+
