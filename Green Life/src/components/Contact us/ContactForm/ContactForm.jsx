@@ -2,26 +2,29 @@
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import './ContactForm.css';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 
 function contactForm() {
+  const formRef = useRef();
   const [validated, setValidated] = useState(false);
- 
-  const handleSubmit = async (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    } 
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const serviceId = "service_n3e7h3c";
+    const templateId = "template_8q3f11k";
+    const apikey = "rp-HaLk6JrgnzOlrk";
+    emailjs.sendForm(serviceId, templateId, formRef.current, apikey)
+      .then(result => console.log(result.text))
+      .catch(error => console.error(error));
     setValidated(true);
   };
   return (
-    <Form className="contactForm " noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form className="contactForm " ref={refForm} noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3 formulario">
         <Form.Group className="Nombre" as={Col} md="4" controlId="validationCustom01">
           <Form.Label>Nombre completo:</Form.Label>
@@ -29,6 +32,7 @@ function contactForm() {
             required
             type="text"
             placeholder="Nombre y apellido"
+            name='name'
           />
           <Form.Control.Feedback type="invalid">
           Por favor, introduce tu nombre y apellidos.
@@ -37,7 +41,7 @@ function contactForm() {
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom04 correo">
           <Form.Label>Email:</Form.Label>
-          <Form.Control type="email" placeholder="Email" required />
+          <Form.Control name='email' type="email" placeholder="Email" required />
           <Form.Control.Feedback type="invalid">
             Email no válido
           </Form.Control.Feedback>
@@ -48,6 +52,7 @@ function contactForm() {
             required
             type="text"
             placeholder="Explica brevemente tu mensaje"
+            name='asunt'
           />
           <Form.Control.Feedback type="invalid">
           Por favor, el asunto del mensaje
@@ -57,7 +62,7 @@ function contactForm() {
         <Form.Group className="Nombre" as={Col} md="4" controlId="validationCustom01">
           <Form.Label>Número de Teléfono:</Form.Label>
           <Form.Control
-            
+            name='asunt'
             type="number"
             placeholder="Introduzca su número si lo desea"
           />
@@ -69,7 +74,7 @@ function contactForm() {
        
         <Form.Group className="mb-3" controlId="descripcion">
         <Form.Label>Hola estoy interesado en...</Form.Label>
-        <Form.Control as="textarea" rows={3}
+        <Form.Control as="textarea" rows={3} name='message'
        />
       </Form.Group>
       
