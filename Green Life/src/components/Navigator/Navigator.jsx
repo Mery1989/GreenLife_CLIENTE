@@ -47,6 +47,9 @@ function Navigator() {
             <Link to="/contactanos" className="barra-Menu">
               <Nav.Link href="#home">Contactanos</Nav.Link>
             </Link>
+            <Link to="/sobreNosotros" className="barra-Menu">
+              <Nav.Link href="#home">Sobre nosotros</Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
