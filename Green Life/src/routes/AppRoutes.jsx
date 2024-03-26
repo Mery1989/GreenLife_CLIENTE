@@ -5,6 +5,7 @@ import EventListPage from "../pages/EventListPages/EventListPages"
 import UserSingupPage from "../pages/UserSingupPages/UserSingupPages"
 import Contactuspage from "../pages/ContactUsPages/ContactUsPages"
 import AboutUsPages from "../pages/AboutUsPages/AboutUsPages"
+import LoginPages from "../pages/LoginPages/LoginPages"
 const AppRoutes = () => {
     return (
   <Routes>
@@ -13,6 +14,7 @@ const AppRoutes = () => {
     <Route element={<UserSingupPage />} path="/singup" />
     <Route element={<Contactuspage />} path="/contactanos" />
     <Route element={<AboutUsPages />} path="/sobreNosotros" />
+    <Route element={<LoginPages />} path="/login" />
   </Routes>
   )
 }
