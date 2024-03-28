@@ -26,7 +26,7 @@ function Description() {
 
                 <Row className='column'>
                     <Col sm>
-                        <h4 className=''>Equipo y Fundadores</h4>
+                        <h4 className='titlesDescription'>Equipo y Fundadores</h4>
                         <p className='contentDescription'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     </Col>
                     <Col sm>

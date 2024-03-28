@@ -6,7 +6,7 @@ const AboutUsPages = () => {
     <>
 
         <Description/>
-            <Profile/>
+        <Profile/>
 
     </>    
     );
