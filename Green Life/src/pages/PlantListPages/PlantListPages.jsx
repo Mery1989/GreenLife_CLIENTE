@@ -1,24 +1,17 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
+
+import PlantList from "../../components/PlantList/PlantList";
+import BannerPlant from "../../components/BannerPlant/BannerPlant";
+
 
 const PlantListPage = () => {
-  //traer lista de datos que comienza con un array vacio
-  let [plant, setPlants] = useState([]);
-
-  //cuando se monte en la card, solo en el 1º montaje
-  useEffect(() => {
-    axios
-      .get("http://localhost:5005/api/plants/getAllPlants")
-      .then(({ data }) => setPlants(data))
-      .catch((err) => console.log(err));
-  }, []);
-
+  
   return (
-    <ul>
-      {plant.map((plant) => (
-        <li>{plant.name}</li>
-      ))}
-    </ul>
+    <Container>
+      <BannerPlant/>
+      <hr />
+      <PlantList/>
+    </Container>
   );
 };
 

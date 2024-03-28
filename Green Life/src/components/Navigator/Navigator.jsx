@@ -41,9 +41,6 @@ function Navigator() {
             <Link to="/esquejes" className="barra-Menu">
               <Nav.Link href="#home">Esquejes</Nav.Link>
             </Link>
-            <Link to="/comunidad" className="barra-Menu">
-              <Nav.Link href="#home">Comunidad</Nav.Link>
-            </Link>
             <Link to="/contactanos" className="barra-Menu">
               <Nav.Link href="#home">Contactanos</Nav.Link>
             </Link>

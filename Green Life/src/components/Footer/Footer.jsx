@@ -16,17 +16,17 @@ function Footer() {
                     </Col>
 
                     <Col>
-                    <Link to = "/" className='link1'><p>Eventos</p></Link>
+                    <Link to = "/eventos" className='link1'><p>Eventos</p></Link>
                     </Col>
 
                     <Col>
-                        <Link to = "/" className='link1'><p>Esquejes</p></Link>
+                        <Link to = "/esquejes" className='link1'><p>Esquejes</p></Link>
                     </Col>
 
                     <Col>
                         <p>MÁS INFO</p>
-                        <Link to = "/" className='link2'><p>Sobre nosotros</p></Link>
-                        <Link to = "/" className='link2'><p>Contáctanos</p></Link>
+                        <Link to = "/sobreNosotros" className='link2'><p>Sobre nosotros</p></Link>
+                        <Link to = "/contactanos" className='link2'><p>Contáctanos</p></Link>
                     </Col>
 
                     <Col className='proximos-eventos'>
