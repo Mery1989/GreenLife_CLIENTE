@@ -1,0 +1,17 @@
+.hero{
+width: 1320px;
+display: flex;
+align-items: center;
+}
+
+.bannerImage{
+  width: 1320px;
+  height: 233px;
+}
+
+.hero-text{
+  margin-left: -972px;
+}
+.hero-text h1{
+  text-transform: uppercase;
+}

@@ -3,11 +3,13 @@ import Carrousel from "../../components/Carrousel/Carrousel"
 import Plants from "../../components/Plants/Plants"
 import Events from "../../components/Events/Events"
 import Calculator from "../../components/Calculator/Calculator"
+import "./HomePage.css"
+
 const HomePage = () => {
   return (
     <>
-      <Carrousel />
-      <Container>
+      <Carrousel/>
+      <Container className="HomeCards">
         <Events />
         <Plants />
       </Container>

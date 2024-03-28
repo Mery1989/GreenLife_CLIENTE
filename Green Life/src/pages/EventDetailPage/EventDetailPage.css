@@ -1,0 +1,30 @@
+.eventDetail{
+    background-color: #fff;
+    
+}
+
+.imgEventDetail{
+    width: 100%;
+    height: 325px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.descriptionDetail{
+    background-color: #F9D370;
+    padding: 5%;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.DetailButton{
+    background-color: #4C8787;
+    border: solid 1px #4c8787;
+    width: 70%;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.DetailButton:hover{
+    background-color: #294936;
+    border: solid 1px #294936;
+}

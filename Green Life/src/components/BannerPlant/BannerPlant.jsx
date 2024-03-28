@@ -1,18 +1,18 @@
-import './EventBanner.css'
+import './BannerPlant.css'
 
 
-function BannerEvent() {
+function BannerPlant() {
   return (
     <>
       <div className="hero">
         <img
           className="bannerImage"
           alt="logo de green life"
-          src="https://res.cloudinary.com/ddtolhmab/image/upload/v1709287621/pexels-surene-palvie-2062061_3_fn7reb.jpg"
+          src="https://res.cloudinary.com/ddtolhmab/image/upload/v1711282900/Green%20LIfe/pexels-surene-palvie-2062061_3_e3kalf.png"
         />
         <div className="hero-text">
           <h1>
-            <b>UNETE A NUESTROS EVENTOS</b>
+            <b>Intercambia Tus Esquejes</b>
           </h1>
           <p>¿A que estás esperando? </p>
         </div>
@@ -21,4 +21,4 @@ function BannerEvent() {
   );
 }
 
-export default BannerEvent;
+export default BannerPlant;

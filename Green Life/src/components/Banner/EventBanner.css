@@ -1,29 +1,15 @@
-.bannerImage {
-  width: 100%;
-}
-
-.hero-text {
-  position: relative;
-  text-align: center;
-  top: 25%;
-  color: white;
-  font-size: 30px;
-  font-weight: 100;
-}
-h1 {
-  font-size: 46px;
-  letter-spacing: 2.6px;
-}
-
-@media only screen and (max-width: 600px) {
-  .hero-text {
-    top: 10px;
-    margin: auto;
-    h1 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 18px;
-    }
+.hero{
+  width: 1320px;
+  display: flex;
+  align-items: center;
   }
-}
+  
+  .bannerImage{
+    width: 1320px;
+    height: 233px;
+  }
+  
+  .hero-text{
+    margin-left: -972px;
+  }
+  
