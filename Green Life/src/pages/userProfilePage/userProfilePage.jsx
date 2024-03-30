@@ -2,6 +2,8 @@ import { Container, Dropdown } from "react-bootstrap";
 import "./userProfilePage.css";
 import ModalPlant from "../../components/ModalPlant/ModalPlant";
 import ModalEvent from "../../components/ModalEvent/ModalEvent";
+import CalculatorForm from "../../components/CalculatorForm/CalculatorForm";
+import ModalCalculator from "../../components/ModalHuella/ModalCalculator";
 
 const UserProfilePage = () => {
   return (
@@ -75,7 +77,7 @@ const UserProfilePage = () => {
             <Dropdown.Menu>
               <p className="pestañaP">Aprende más sobre tus hábitos de consumo y encuentra maneras de vivir de forma más sostenible. 
                 ¡Haz clic y comienza a construir un futuro más verde ahora mismo!</p>
-              <Dropdown.Item href="#/action-3">boton calcular la huella de carbono</Dropdown.Item>
+              <Dropdown.Item href="#/action-3"><ModalCalculator/></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <br />
@@ -124,6 +126,10 @@ const UserProfilePage = () => {
       <div>
         <h3>Mis esquejes</h3>
       </div>
+      <div>
+        <CalculatorForm/>
+      </div>
+
     </Container>
   );
 };
