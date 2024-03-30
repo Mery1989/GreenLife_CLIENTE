@@ -3,6 +3,7 @@
 .menu1 .order{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: Pompiere;
     font-size: 28px;
     text-transform: uppercase;
@@ -25,9 +26,12 @@
     width: 100%;
 }
 .loginIcono{
-margin-left: 70%;  
-width: 2%; 
-height: 2%;
+height: 34px;
+}
+
+.Logomenu{
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -49,11 +53,3 @@ height: 2%;
     .menu2{
         justify-content: flex-end;
     
-    }
-    .loginIcono{
-        margin-left: 30%;  
-        width: 10%; 
-        height: 10%;
-        }
-}
- 

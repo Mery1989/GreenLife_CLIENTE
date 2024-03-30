@@ -1,0 +1,45 @@
+.Profiletop{
+    display: flex;
+    justify-content: space-between;
+    width: 1201px;
+}
+.Profilehuella{
+    display: flex;
+    flex-direction: column;
+    width: 577px;
+}
+.ProfileData{
+    display: flex;
+    flex-direction: column;
+}
+.profilePicture{
+    width: 529px;
+    height: 306px;    
+    border-radius: 30px;
+}
+
+.profileIcon{
+    width: 52px;
+    height: 52px;  
+}
+.ProfileCosas{
+    width: 529px;
+}
+
+.profileRow{
+    display: flex;
+    align-items: end;
+}
+
+.pestañaProfile{
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    width: 529px;
+    border: 1px solid #000;
+    height: 75px;
+}
+
+.pestañaP{
+    padding: 15px;
+}

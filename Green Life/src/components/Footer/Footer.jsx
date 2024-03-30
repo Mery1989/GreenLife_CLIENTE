@@ -9,7 +9,7 @@ function Footer() {
             <div className='footer1'>
                 <Container className='orden'>
                     <Col>
-                        <Link to = "/" className='link'><p>Green Life</p></Link>
+                        <Link to = "/login" className='link'><p>Green Life</p></Link>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p>DIRECCION</p>
                         <p>+12 3 0000 0000 contact@greenlife.com</p>    

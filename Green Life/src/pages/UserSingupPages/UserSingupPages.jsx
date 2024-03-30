@@ -1,18 +1,21 @@
+import { Container } from "react-bootstrap";
+import FormSingup from "../../components/UserSingup/UserSingup/UserSingup";
+import "./UserSingupPages.css";
 
-import FormSingup from '../../components/UserSingup/UserSingup/UserSingup';
-import UserSingupTitle from '../../components/UserSingup/UserSingupTitle/UserSingupTitle';
 const UserSingupPage = () => {
   return (
-    <>
-     
-      
-        <UserSingupTitle />
+    <Container>
+      <h2 className="formularioH2">Formulario de registro</h2>
+      <div className="formrow">
+        <img
+          alt="maceta con hojas verdes"
+          className="imageForm"
+          src="./../../../public/userform.png"
+        />
         <FormSingup />
-      
-    </>
+      </div>
+    </Container>
   );
 };
-
-
 
 export default UserSingupPage;

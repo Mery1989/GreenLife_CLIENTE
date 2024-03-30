@@ -1,0 +1,16 @@
+.imageForm {
+  height: 364px;
+  margin-right: 15px;
+}
+
+.formularioH2 {
+  display: flex;
+  justify-content: center;
+}
+
+.formrow {
+  margin-top: 30px;
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+}

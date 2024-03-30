@@ -10,6 +10,7 @@ import LoginPages from "../pages/LoginPages/LoginPages"
 import EventDetailPage from "../pages/EventDetailPage/EventDetailPage"
 import PlantListPage from "../pages/PlantListPages/PlantListPages"
 import PlantDetailPage from "../pages/PlantDetailPage/PlantDetailPage"
+import UserProfilePage from "../pages/userProfilePage/userProfilePage"
 
 
 const AppRoutes = () => {
@@ -25,6 +26,8 @@ const AppRoutes = () => {
 
     <Route path="/login" element={<LoginPages />} />
     <Route path="/singup" element={<UserSingupPage />} />
+    <Route path="/test" element={<UserProfilePage />} />
+
 
     <Route path="/contactanos" element={<Contactuspage />} />
     <Route path="/sobreNosotros" element={<AboutUsPages />} />
