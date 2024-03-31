@@ -2,7 +2,6 @@ import { Container, Dropdown } from "react-bootstrap";
 import "./userProfilePage.css";
 import ModalPlant from "../../components/ModalPlant/ModalPlant";
 import ModalEvent from "../../components/ModalEvent/ModalEvent";
-import CalculatorForm from "../../components/CalculatorForm/CalculatorForm";
 import ModalCalculator from "../../components/ModalHuella/ModalCalculator";
 
 const UserProfilePage = () => {
@@ -105,11 +104,6 @@ const UserProfilePage = () => {
               <Dropdown.Item href="#/action-3"><ModalEvent /></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-
-
-
-
-          
           
         </div>
       </div>
@@ -125,9 +119,6 @@ const UserProfilePage = () => {
       <br />
       <div>
         <h3>Mis esquejes</h3>
-      </div>
-      <div>
-        <CalculatorForm/>
       </div>
 
     </Container>
