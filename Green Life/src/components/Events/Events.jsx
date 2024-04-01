@@ -1,5 +1,7 @@
 import './Events.css';
 
+import { Link } from "react-router-dom";
+
 function Events(){
     return(
      <div className="card rounded-5 overflow-hidden card card-large"  >
@@ -15,7 +17,7 @@ function Events(){
         <div className="col-md-6 align-self-end">
           <div className="card-body pb-5 ml-n4">
             <p className="card-title h3 pb-5 EventTitle">Eventos</p>
-            <button type="button" className="btn btn-primary">Ver más</button>
+            <Link to="/eventos" ><button type="button" className="btn btn-primary"> Ver más</button></Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import './Plants.css';
+import { Link } from "react-router-dom";
 
 function Plants(){
     return(
@@ -15,7 +16,7 @@ function Plants(){
         <div className="col-md-6 align-self-end">
           <div className="card-body pb-5 ml-n4">
             <p className="card-title h3 pb-5 PlantTitle">Esquejes</p>
-            <button type="button" className="btn btn-primary">Ver más</button>
+            <Link to="/esquejes"><button type="button" className="btn btn-primary">Ver más</button></Link>
           </div>
         </div>
       </div>
