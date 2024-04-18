@@ -5,8 +5,8 @@ function Loginform() {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control type="email" placeholder="Introduzca su email" />
+        <Form.Label>Usuario</Form.Label>
+        <Form.Control type="text" placeholder="Introduzca su nombre de usuario" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupPassword">
         <Form.Label>Contraseña</Form.Label>
