@@ -1,47 +1,93 @@
+import { useState, useEffect } from "react";
 import { Container, Dropdown } from "react-bootstrap";
 import "./userProfilePage.css";
 import ModalPlant from "../../components/ModalPlant/ModalPlant";
 import ModalEvent from "../../components/ModalEvent/ModalEvent";
 import ModalCalculator from "../../components/ModalHuella/ModalCalculator";
+import userService from "../../services/UserService";
+import { useParams } from "react-router-dom"; 
 
 const UserProfilePage = () => {
+  const [userData, setUserData] = useState(null);
+  const { username } = useParams(); // Obtén el nombre de usuario de los parámetros de la URL
+
+  useEffect(() => {
+    // Hacer la solicitud para obtener los datos del perfil del usuario
+    const fetchUserProfile = async () => {
+      try {
+        const userProfile = await userService.getUserProfile(username);
+        setUserData(userProfile);
+      } catch (error) {
+        console.error("Error al obtener el perfil del usuario:", error);
+      }
+    };
+
+    fetchUserProfile();
+  }, [username]); // Agrega username como dependencia para que useEffect se ejecute cuando cambie
+   // Función para formatear la fecha de nacimiento en formato europeo (DD/MM/YYYY)
+  const formatDateOfBirth = (dateString) => {
+    const date = new Date(dateString);
+    const day = date.getDate().toString().padStart(2, "0");
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
   return (
     <Container>
       <div className="Profiletop">
         <div className="ProfileData">
-          <h1>USUARIO</h1>
-          <div className="profileRow">
-            <img
-              className="profileIcon"
-              alt="esacio para resultado de la huella de carbono"
-              src="mailIcon.png"
-            />
-            <p>mail</p>
-          </div>
-          <div className="profileRow">
-            <img
-              className="profileIcon"
-              alt="esacio para resultado de la huella de carbono"
-              src="phoneIcon.png"
-            />
-            <p>telf</p>
-          </div>
-          <div className="profileRow">
-            <img
-              className="profileIcon"
-              alt="esacio para resultado de la huella de carbono"
-              src="wordIcon.png"
-            />
-            <p>Localización</p>
-          </div>
+        {userData && (
+            <>
+              <h1>{userData.username}</h1>  
+              <div className="profileRow">
+                  <img
+                    className="profileIcon"
+                    alt="Icono de correo electrónico"
+                    src="./../../../public/mailIcon.png"
+                  />
+
+                <p>{userData.email}</p>
+              </div>
+              <div className="profileRow">
+                  <img
+                    className="profileIcon"
+                    alt="Icono de correo electrónico"
+                    src="./../../../public/name.svg"
+                  />
+
+                <p>{userData.name}</p>
+              </div>
+              <div className="profileRow">
+                  <img
+                    className="profileIcon"
+                    alt="Icono de correo electrónico"
+                    src="./../../../public/birth.svg"
+                  />
+
+                <p>{formatDateOfBirth(userData.datebirth)}</p>
+              </div>
+              
+              <div className="profileRow">
+              <img
+                className="profileIcon"
+                alt="Icono de ubicación"
+                src="./../../../public/wordIcon.png"
+              />
+
+                <p>{userData.location}</p>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="ProfileData">
-          <img
+        <img
             className="profilePicture"
-            alt="perfil del usuario"
-            src="https://res.cloudinary.com/ddtolhmab/image/upload/v1711712470/pexels-heitor-verdi-2169434_ngr63m.jpg"
+            alt="Perfil del usuario"
+            src="./../../../public/imagenPerfil.jpg"
           />
+
         </div>
       </div>
       <br />

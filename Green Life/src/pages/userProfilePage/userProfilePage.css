@@ -11,17 +11,21 @@
 .ProfileData{
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 .profilePicture{
-    width: 529px;
-    height: 306px;    
+    width: 550px;
+    height: auto;    
     border-radius: 30px;
+    
 }
 
 .profileIcon{
     width: 52px;
     height: 52px;  
+    
 }
+
 .ProfileCosas{
     width: 529px;
 }
