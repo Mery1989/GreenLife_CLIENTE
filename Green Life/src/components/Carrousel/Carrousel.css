@@ -21,20 +21,12 @@
 
 .carrouselImage {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  height: 100%;
   display:block;
   margin: 0 auto;
   object-position: center;
 }
-.image3{
-  height: 100%;
- 
-}
 
-.image4{
-  height:600px;
-}
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
   .left-content {
@@ -60,18 +52,19 @@
   .left-content {
     width: 100%;
   }
-  .image2{
-  height: 100%;
+ /* .image12{
+   width: 100%;
   content: url('https://res.cloudinary.com/ddtolhmab/image/upload/v1709377385/3_or2cvs.jpg');
 }
-.image3{
-  
+.image13{
+  width: 100%;
   content: url('https://res.cloudinary.com/ddtolhmab/image/upload/v1709456706/flores_jqxd26.png');
 }
-.image4{
- 
+.image14{
+  width: 100%;
+  height: auto;
   content: url('https://res.cloudinary.com/ddtolhmab/image/upload/v1709377386/2_honk8z.jpg');
 }
-
+*/
 }
 

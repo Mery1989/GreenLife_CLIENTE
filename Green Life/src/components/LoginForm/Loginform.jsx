@@ -49,7 +49,7 @@ function Loginform() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </Form.Group>
-      <Button id="button" type="submit">Enviar</Button>
+      <Button id="button" type="submit">Entrar</Button>
     </Form>
   );
 }

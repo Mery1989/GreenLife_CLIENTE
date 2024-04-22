@@ -15,7 +15,7 @@ HUELLA DE CARBONO</Card.Title>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         </Card.Text>
         </div>
-        <Link to="/login"><Button variant="primary"className="button2">EMPEZAR EL TEST</Button></Link>
+        <Link to="/login"><Button variant="primary"className="buttonHuella">EMPEZAR EL TEST</Button></Link>
       </Card.Body>
     </Card>
   );
