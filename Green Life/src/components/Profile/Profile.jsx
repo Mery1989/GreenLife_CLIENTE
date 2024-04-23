@@ -51,11 +51,11 @@ function Profile() {
     </Card>
 
     <Card className='custom-card '>
-      <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
+      <Card.Img className = "custom-img" variant="top" src="fotoMelo.jpg"/>
       <Card.Body className='contentBody'>
         <Card.Title>Antonio Melo</Card.Title>
         <Card.Text>
-          Fundadora
+          Fundador
         </Card.Text>
         <Link to="/">
               <img

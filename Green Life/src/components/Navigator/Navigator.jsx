@@ -14,10 +14,10 @@ function Navigator() {
                 src="public/Logo_Green_Life.png"
                 alt="Green Life Logo"
               />
-              <p>Green life</p>
+              <p className="tituloPag">Greenlife</p>
             </Link>
 
-            <Link to="/login">
+            <Link to="/login"className="loginIcono2">
               <img
                 className="loginIcono"
                 src=".\public\avatar.png"
