@@ -1,10 +1,13 @@
-
+.card{
+    border-style: none;
+}
 .cuerpo{
     margin-top: -600px;
     background-color: rgba(130, 255, 130, 0.5);
     width: 667px;
     height: 300px;
     margin-left: -16px;
+   
 }
 .imghuella{
     width: 667px;
@@ -15,13 +18,15 @@
    font-weight: bold;
    text-align: center;
 }
-.button2{
-    margin-top: 30px;
+.buttonHuella{
+   
     background-color:#4C8787;
     color: white;
     font-weight: normal;
-    border-radius: 30px;
-    margin-left: 30px
+    margin-left: 30px;
+    border-radius: 0px;
+    font-size: 13px;
+    border-color: #FFFFFF;
 }
 .txt{
     margin-top: 60px;
@@ -30,7 +35,8 @@
 }
 .huella{
     height: 650px;
-    margin-bottom: 450px; /*quitar cuando se arregle footer*/
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 1439px){
@@ -52,8 +58,9 @@
         margin: -440px 0 0;
         height: 240px;
     }
-    .button2{
+    .buttonHuella{
         margin-top: 10px;
+      
     }
     
 }
@@ -94,13 +101,14 @@
      
             border-radius:36px 0 0 36px;
         }
-        .button2{
-            margin-top: -200px;
+        .buttonHuella{
+            margin-top: -300px;
             margin-left: 200px;
             width: 220px;
-            
+            font-size: 20px;
             }
         }
+       
 @media only screen and (min-width: 1920px){
     .title{
         padding-top: 150px;
@@ -138,9 +146,11 @@
          width: 720px;
          border-radius:36px 0 0 36px;
      }
-     .button2{
+     .buttonHuella{
         width: 220px;
+       margin-left: 35%;
+        margin-top: -300px; 
+        }
          
-         }
     }  
     

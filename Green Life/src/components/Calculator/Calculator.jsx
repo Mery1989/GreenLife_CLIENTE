@@ -12,10 +12,10 @@ function Calculator() {
         <Card.Title className="title"><br></br>QUIERES CALCULAR TU
 HUELLA DE CARBONO</Card.Title>
         <Card.Text className="txt">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        Con nuestro fantástico test descubrirás tu huella de carbono y te enseñaremos a mejorarla.
         </Card.Text>
         </div>
-        <Link to="/login"><Button variant="primary"className="button2">EMPEZAR EL TEST</Button></Link>
+        <Link to="/login"><Button variant="primary"className="buttonHuella">EMPEZAR EL TEST</Button></Link>
       </Card.Body>
     </Card>
   );

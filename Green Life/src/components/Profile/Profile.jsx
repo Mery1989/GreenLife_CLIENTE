@@ -52,10 +52,10 @@ function Profile() {
     </Card>
 
     <Card className='custom-card '>
-      <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
+      <Card.Img className = "custom-img" variant="top" src="fotoMelo.jpg"/>
       <Card.Body className='contentBody'>
-        <Card.Title className='profileName'>Antonio Melo</Card.Title>
-        <Card.Text className='profileName'>
+        <Card.Title>Antonio Melo</Card.Title>
+        <Card.Text>
           Fundador
         </Card.Text>
          <Link to="/">

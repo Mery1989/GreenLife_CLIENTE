@@ -10,7 +10,7 @@ const HomePage = () => {
     <>
       <Carrousel/>
       <Container className="HomeCards">
-        <Events />
+        <Events/>
         <Plants />
       </Container>
       <Calculator />

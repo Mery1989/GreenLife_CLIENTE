@@ -26,10 +26,11 @@ return (
           </Carousel.Caption>
         </div>
       </Carousel.Item>
+      
       <Carousel.Item>
         <div className="carousel-item-container">
           <div >
-            <img className='carrouselImage image2' alt="imagen que pone coming soon" src="./../../../public/fotocarruselmobile2.jpg" />
+            <img className='carrouselImage image12' alt="imagen de margaritas de colores" src="./../../../public/macetas.png" />
           </div>
           
         </div>
@@ -37,15 +38,7 @@ return (
       <Carousel.Item>
         <div className="carousel-item-container">
           <div >
-            <img className='carrouselImage image3' alt="imagen de margaritas de colores" src="./../../../public/macetas.png" />
-          </div>
-          
-        </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="carousel-item-container">
-          <div >
-            <img className='carrouselImage image4'alt="imagen de primavera" src="./../../../public/molino.png" />
+            <img className='carrouselImage image13'alt="imagen de primavera" src="./../../../public/molino.png" />
           </div>
           
         </div>
