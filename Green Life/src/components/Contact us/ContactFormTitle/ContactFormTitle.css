@@ -12,6 +12,11 @@
    
     
 }
+@media (min-width: 375px) {
+  .userTitle{
+    margin-left: 5%;
+  }
+}
 @media (min-width: 769px) {
   
   .imageContact{

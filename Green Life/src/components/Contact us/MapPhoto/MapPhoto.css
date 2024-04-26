@@ -9,3 +9,14 @@
   max-width: 1199px;
   max-height: 501px;
 }
+@media (min-width: 1024px) {
+  .bot{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .imageMap{
+    width: 100%;
+    max-width: 776px;
+  }
+}
