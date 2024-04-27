@@ -2,7 +2,7 @@ import axios from "axios";
 
 class HuellaService {
   constructor() {
-    this.api = axios.create({ baseURL: "http://localhost:5005/api/huella" });
+    this.api = axios.create({ baseURL: "http://localhost:5005/api/huellas" });
   }
 
   getAllHuella = () => {

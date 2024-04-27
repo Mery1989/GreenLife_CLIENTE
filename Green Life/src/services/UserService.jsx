@@ -5,7 +5,7 @@ class UserService {
     this.api = axios.create({ baseURL: "http://localhost:5005/api/user" });
   }
 
-  sendSignup = async (userData) => {
+  sendSingup = async (userData) => {
     try {
       const response = await this.api.post("/signup", userData, {
         headers: {

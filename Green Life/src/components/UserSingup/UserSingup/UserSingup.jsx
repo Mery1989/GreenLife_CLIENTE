@@ -1,16 +1,13 @@
-
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import './UserSingup.css';
-import { useState, useEffect  } from 'react';
+import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
+import "./UserSingup.css";
+import { useState, useEffect } from "react";
 import userService from "../../../services/UserService";
+
 function FormSingup() {
   const [validated, setValidated] = useState(false);
   const [redirectTo, setRedirectTo] = useState(null);
-  const redirectUrl = '/';
+  const redirectUrl = "/";
+
   const handleSubmit = async (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -26,18 +23,21 @@ function FormSingup() {
         password: form.elements.formBasicPassword.value,
         datebirth: form.elements.validationCustom05.value,
         gender: form.elements.validationCustomGender.value,
-        location: form.elements.validationCustom06.value, 
+        location: form.elements.validationCustom06.value,
         description: form.elements.descripcion.value,
       };
 
       try {
-  
         await userService.sendSingup(formData);
 
         setValidated(false);
         setRedirectTo(redirectUrl);
       } catch (error) {
-        console.error('Error al enviar el formulario:', error.response.data);
+        if (error.response && error.response.data) {
+          console.error("Error al enviar el formulario:", error.response.data);
+        } else {
+          console.error("Error al enviar el formulario:", error);
+        }
       }
     }
 
@@ -45,24 +45,24 @@ function FormSingup() {
   };
   useEffect(() => {
     if (redirectTo) {
-      window.location.href = redirectTo; 
+      window.location.href = redirectTo;
     }
   }, [redirectTo]);
 
   return (
-    <Form className="nombre"noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form
+      className="nombre"
+      noValidate
+      validated={validated}
+      onSubmit={handleSubmit}
+    >
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
           <Form.Label>Nombre completo:</Form.Label>
-          <Form.Control
-            required
-            type="text"
-            placeholder="Nombre y apellido"
-          />
+          <Form.Control required type="text" placeholder="Nombre y apellido" />
           <Form.Control.Feedback type="invalid">
-              Introduce tu nombre y apellidos
-            </Form.Control.Feedback>
-       
+            Introduce tu nombre y apellidos
+          </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom04">
           <Form.Label>Email:</Form.Label>
@@ -87,10 +87,13 @@ function FormSingup() {
           </InputGroup>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Contraseña:</Form.Label>
-        <Form.Control type="password" placeholder="Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un carácter especial. " />
-      </Form.Group>
-      <Form.Group as={Col} md="3" controlId="validationCustom05">
+          <Form.Label>Contraseña:</Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un carácter especial. "
+          />
+        </Form.Group>
+        <Form.Group as={Col} md="3" controlId="validationCustom05">
           <Form.Label>Fecha de nacimiento:</Form.Label>
           <Form.Control type="date" placeholder="date" required />
           <Form.Control.Feedback type="invalid">
@@ -114,27 +117,29 @@ function FormSingup() {
             placeholder="Introduce tu localización"
           />
           <Form.Control.Feedback type="invalid">
-              Introduce tu Localización
-            </Form.Control.Feedback>
-       
+            Introduce tu Localización
+          </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mb-3" controlId="descripcion">
-        <Form.Label>Descripción:</Form.Label>
-        <Form.Control as="textarea" rows={3} />
-      </Form.Group>
-      
-      <Form.Group className="mb-3" >
-        <Form.Check className="check"
-          required
-          label="Aceptar términos y condiciones"
-          feedback="Debes aceptar términos y condiciones antes de continuar."
-          feedbackType="invalid"
-        />
-      </Form.Group></Row>
-      <Button id="button" type="submit">Registrarse</Button>
+          <Form.Label>Descripción:</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+
+        <Form.Group className="mb-3">
+          <Form.Check
+            className="check"
+            required
+            label="Aceptar términos y condiciones"
+            feedback="Debes aceptar términos y condiciones antes de continuar."
+            feedbackType="invalid"
+          />
+        </Form.Group>
+      </Row>
+      <Button id="button" type="submit">
+        Registrarse
+      </Button>
     </Form>
   );
-  
 }
 
 export default FormSingup;

@@ -30,7 +30,7 @@ function Profile() {
     </Card>
 
     <Card className='custom-card '>
-      <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
+      <Card.Img className = "custom-img" variant="top" src="public\Ldvb.PNG"/>
       <Card.Body className='contentBody'>
         <Card.Title className='profileName'>Laura del Valle</Card.Title>
         <Card.Text className='profileName'>
