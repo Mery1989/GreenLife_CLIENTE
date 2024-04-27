@@ -1,19 +1,17 @@
-import axios  from "axios";
+import axios from "axios";
 
 class HuellaService {
+  constructor() {
+    this.api = axios.create({ baseURL: "http://localhost:5005/api/huella" });
+  }
 
-        constructor(){
-            this.api = axios.create ({baseURL: "http://localhost:5005/api/huella"})
-        }
+  getAllHuella = () => {
+    return this.api.get("/getAllHuella");
+  };
 
-        getAllHuella = () => {
-            return this.api.get("/getAllHuella")
-        };
-
-        saveHuella = huella => {
-            return this.api.post("/saveHuella" , huella)
-        }
-
+  saveHuella = (huella) => {
+    return this.api.post("/saveHuella", huella);
+  };
 }
 
 const huellaService = new HuellaService();

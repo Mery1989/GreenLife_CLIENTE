@@ -161,11 +161,15 @@ const UserProfilePage = () => {
       <br />
       <div>
         <h3>Mis eventos</h3>
+        <h6>*Próximamente</h6>
       </div>
       <br />
       <div>
         <h3>Mis esquejes</h3>
+        <h6>*Próximamente</h6>
       </div>
+      <br />
+      <br />
 
     </Container>
   );
