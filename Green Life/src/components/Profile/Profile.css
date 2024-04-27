@@ -1,36 +1,54 @@
+
 .custom-card {
     width: 280px;
-    height: 550px;
-}
-
-
-.contentBody  {
-    text-align: center;
+    height: auto; 
+    margin: 20px;
 }
 
 .custom-img {
-    height: 430px;
-    border-radius: 20px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 20px; 
+}
+
+.contentBody {
+    text-align: center;
 }
 
 .profilebox {
     height: 650px;
     display: flex;
     justify-content: center;
+    gap: 20px; /* Espacio entre perfiles */
+    padding: 20px; 
 }
 
 .profileIcono {
-    margin: 0 20px ;
     width: 20px;
     height: 20px;
+    margin: 0 10px;
 }
 
-@media screen and (max-width: 960px) {
-    .containerDescription {
-        width: auto;
-        height: 683px;
-    
+@media screen and (max-width: 1440px) {
+    .custom-card {
+        width: calc(50% - 40px); /* Haz que los perfiles ocupen la mitad del ancho de la pantalla con espacio entre ellos */
     }
 
-   
+    .profilebox{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .profileName{
+        font-size: 1rem;
+    }  
+    
+}
+
+@media screen and (max-width: 375px) {
+    .custom-card {
+        width: calc(100% - 40px); /* Haz que los perfiles ocupen todo el ancho de la pantalla con espacio entre ellos */
+    }
 }

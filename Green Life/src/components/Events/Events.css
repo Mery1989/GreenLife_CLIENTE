@@ -3,7 +3,7 @@
     font-weight: bold;
     align-items: center;
   }
-  .card {
+  .card1 {
     max-width: 767px;
     max-height: 300px;
     border: none;
@@ -85,14 +85,21 @@
     }
   }
   @media (min-width: 1000px) {
-  
-    .img-fluid {
-      max-height: 100%;
-      width: 100%;
+  .card1{
+    width: 636px;
+    height: 368px;
+  }
+  .cart-title{
+    margin-top: 100px;
+  }
+    .imgEvents {
+      height: 364px;
+      width: 362px;
       
     }
     .EventTitle{
-      margin-top: -200px;
+      margin-top: -238px;
+      margin-left: 120px;
     }
     
     .cardRowEvent {
@@ -111,12 +118,11 @@
       width: 124px;
       height: 48px;
       background-color: #063012;
+      
+    }
+    .buttonEvents{
+      margin-left: 110px;
     }
   }
-  @media (min-width: 1400px) {
-    .card-large {
-      width: 45%;
-      margin-right: 2.5%; 
-    }
-  }
+
   

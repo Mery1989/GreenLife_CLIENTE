@@ -6,14 +6,15 @@ function Profile() {
   return (
 
     <div className='profilebox'>    
+
       <Card className='custom-card '>
       <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
       <Card.Body className='contentBody'>
-        <Card.Title>Mª Reyes Torres</Card.Title>
-        <Card.Text>
+        <Card.Title className='profileName'>Mª Reyes Torres</Card.Title>
+        <Card.Text className='profileName'>
           Fundadora
         </Card.Text>
-        <Link to="/">
+          <Link to="/">
               <img
                 className="profileIcono"
                 src="public/blackFacebook.png"
@@ -24,18 +25,18 @@ function Profile() {
                 src="public/blackTwitter.png"
                 alt="Green Life Logo"
               />
-            </Link>
+          </Link>
       </Card.Body>
     </Card>
 
     <Card className='custom-card '>
       <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
       <Card.Body className='contentBody'>
-        <Card.Title>Laura del Valle</Card.Title>
-        <Card.Text>
+        <Card.Title className='profileName'>Laura del Valle</Card.Title>
+        <Card.Text className='profileName'>
           Fundadora
         </Card.Text>
-        <Link to="/">
+          <Link to="/">
               <img
                 className="profileIcono"
                 src="public/blackFacebook.png"
@@ -46,18 +47,18 @@ function Profile() {
                 src="public/blackTwitter.png"
                 alt="Green Life Logo"
               />
-            </Link>
+          </Link>
       </Card.Body>
     </Card>
 
     <Card className='custom-card '>
-      <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
+      <Card.Img className = "custom-img" variant="top" src="fotoMelo.jpg"/>
       <Card.Body className='contentBody'>
         <Card.Title>Antonio Melo</Card.Title>
         <Card.Text>
-          Fundadora
+          Fundador
         </Card.Text>
-        <Link to="/">
+         <Link to="/">
               <img
                 className="profileIcono"
                 src="public/blackFacebook.png"
@@ -68,15 +69,15 @@ function Profile() {
                 src="public/blackTwitter.png"
                 alt="Green Life Logo"
               />
-            </Link>
+          </Link>
       </Card.Body>
     </Card>
 
     <Card className='custom-card '>
-      <Card.Img className = "custom-img" variant="top" src="fotoReyes.jpg"/>
+      <Card.Img className = "custom-img" variant="top" src="fotoMaria.jpg"/>
       <Card.Body className='contentBody'>
-        <Card.Title>María Márquez</Card.Title>
-        <Card.Text>
+        <Card.Title className='profileName'>María Márquez</Card.Title>
+        <Card.Text className='profileName'>
           Fundadora
         </Card.Text>
         <Card.Link > 
