@@ -2,8 +2,13 @@ import { useState } from "react";
 import "./CalculatorForm.css";
 import { Form, Button } from "react-bootstrap";
 import huellaService from "../../services/HuellaService";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie } from "react-chartjs-2";
 
-const CalculatorForm = ({closeModal, refreshHuella})=> {
+ChartJS.register(ArcElement, Tooltip, Legend)
+
+
+const CalculatorForm = ({ closeModal }) => {
   const [huellaData, setHuellaData] = useState({
     question1: "",
     question2: "",
@@ -17,32 +22,110 @@ const CalculatorForm = ({closeModal, refreshHuella})=> {
     question10: "",
   });
 
+  const [categoriaValores, setCategoriaValores] = useState({
+    transporte: 0,
+    alimentos: 0,
+    energia: 0,
+  });
 
-  
-    const handleChange = (e) => {
-        const {value, name } = e.target;
-        setHuellaData({
-            ...huellaData,
-            [name]:value,
-        });
+  const [porcentajeHuella, setPorcentajeHuella] = useState(null);
+  const [showGraph, setShowGraph] = useState(false); // Estado para controlar la visibilidad del gráfico
+
+  const handleChange = (e) => {
+    const { value, name } = e.target;
+    setHuellaData({
+      ...huellaData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    huellaService
+      .saveHuella(huellaData)
+      .then(({ data }) => {
+        calcularPorcentajeHuella();
+        setShowGraph(true); // Mostrar el gráfico después de calcular la huella de carbono
+        console.log("Porcentaje de huella calculado: handlesumit", porcentajeHuella); // Verificar el porcentaje de huella calculado
+        console.log("Datos de categoría calculados:handlesumit", categoriaValores); 
+      })
+      .catch((err) => console.log(err));
+  };
+
+
+  const calcularPorcentajeHuella = () => {
+    const puntuacionPerfecta = 100; // Cambiar según la puntuación máxima posible
+    let puntuacionTotal = 0;
+
+    // Asignar puntos según las respuestas
+    for (const pregunta in huellaData) {
+      const respuesta = huellaData[pregunta];
+      switch (respuesta) {
+        case "a":
+          puntuacionTotal -= 1;
+          break;
+        case "b":
+          // No hacer nada para respuestas neutras
+          break;
+        case "c":
+          puntuacionTotal += 1;
+          break;
+        default:
+          break;
+      }
+    }
+
+    // Calcular porcentaje
+    const porcentaje = (puntuacionTotal / puntuacionPerfecta) * 100;
+    setPorcentajeHuella(porcentaje);
+
+    // Calcular valores de cada categoría
+    const totalRespuestas = Object.keys(huellaData).length;
+    const categorias = {
+      transporte: ["question1", "question2", "question9"],
+      alimentos: ["question3", "question4", "question5", "question10"],
+      energia: ["question6", "question7", "question8"],
     };
 
-    
-    const handleSubmit = (e) =>{
-        e.preventdefault()
-        huellaService
-        .saveHuella (huellaData)
-        .then (({data}) => {closeModal(),
-        refreshHuella()})
-        .catch((err) => console.log(err))
-        
-    };
+    const valoresPorCategoria = {};
+    Object.keys(categorias).forEach((categoria) => {
+      let valorCategoria = 0;
+      categorias[categoria].forEach((pregunta) => {
+        if (huellaData[pregunta] === "a") {
+          valorCategoria -= 1;
+        } else if (huellaData[pregunta] === "c") {
+          valorCategoria += 1;
+        }
+      });
+      valoresPorCategoria[categoria] = (valorCategoria / totalRespuestas) * 100;
+    });
+    setCategoriaValores(valoresPorCategoria);
 
-    
-    const sum = (a, b) => {
-        console.log("suma");
-        return a + b;
-      };
+    console.log("Porcentaje de huella calculado: calcularPorcentajeHuella", porcentaje); // Verificar el porcentaje calculado
+    console.log("Datos de categoría calculados: calcularPorcentajeHuella" , valoresPorCategoria); // Verificar los datos de categoría calculados
+
+  };
+
+  // Configuración de datos para el gráfico
+  const data = {
+    labels: Object.keys(categoriaValores),
+    datasets: [
+      {
+        data: Object.values(categoriaValores),
+        backgroundColor: [
+          "rgba(27, 81, 45, 0.6)", // Rojo
+          "rgba(28, 124, 84, 0.6)", // Azul
+          "rgba(115, 226, 167, 0.6)", // Amarillo
+        ],
+        borderColor: [
+          "rgba(224, 245, 233, 1)",
+          "rgba(122, 225, 182, 1)",
+          "rgba(42, 203, 117, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
 
   return (
     <div>
@@ -345,11 +428,17 @@ const CalculatorForm = ({closeModal, refreshHuella})=> {
           </div>
         </div>
         <center>
-          <Button className="DetailButton" type="submit">
+        <Button className="DetailButton" type="submit" onClick={(e) => handleSubmit(e)}>
             Calcular Huella de Carbono
           </Button>
         </center>
       </Form>
+      <div className="Box">{showGraph && porcentajeHuella && (
+      <div style={{ marginTop: "20px" }}>
+        <Pie data={data} />
+      </div>
+      )}</div>
+      
       </div>
     
   );
