@@ -53,16 +53,7 @@ const UserProfilePage = () => {
                   <img
                     className="profileIcon"
                     alt="Icono de correo electrónico"
-                    src="./../../../public/name.svg"
-                  />
-
-                <p>{userData.name}</p>
-              </div>
-              <div className="profileRow">
-                  <img
-                    className="profileIcon"
-                    alt="Icono de correo electrónico"
-                    src="./../../../public/birth.svg"
+                    src="./../../../public/iconTarta.png"
                   />
 
                 <p>{formatDateOfBirth(userData.datebirth)}</p>
