@@ -49,3 +49,27 @@
   margin-top: 10px;
 }
   }
+  @media only screen and (min-width: 1919px) {
+ 
+    .card-large {
+      margin-right: 2.5%; 
+    }
+    .PlantTitle{
+      margin-top: -267px;
+      margin-left: 154px;
+    }
+    .buttonPlants{
+      margin-left: 150px;
+      margin-top: 2px;
+    }
+  
+  .card3 {
+    margin-top: 50px;
+    width: 636px;
+    height: 368px;
+    border: none;
+    background-color: #EAE9E7;
+    margin-left: 25px;
+    
+  }
+    }
