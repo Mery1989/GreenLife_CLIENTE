@@ -103,7 +103,7 @@ const UserProfilePage = () => {
         </div>
         <div className="ProfileCosas">
           <h3>Mis cosas</h3>
-          <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.</p>
+          <p>Anímate y participa en nuestra comunidad.</p>
 
           <Dropdown >
             <Dropdown.Toggle variant="success" id="dropdown-basic" className="pestañaProfile">
