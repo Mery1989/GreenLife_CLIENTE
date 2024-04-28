@@ -10,7 +10,7 @@ const PlantListPage = () => {
       <BannerPlant/>
       <hr />
       <PlantList/>
-      
+      <ModalPlant/>
       </Container>
   );
 };
