@@ -3,21 +3,14 @@
   background-color: green;
   height: 500px;
   overflow: hidden;
+  font-size: 18px;
 }
 
 .left-content {
   width: 200%;
   margin-left: -170px;
 }
-.boton {
-  font-size: 18px;
-  background-color: rgba(255, 255, 255, 0);
-  color: #ffffff;
-  font-weight: bold;
-  width: 124px;
-  height: 48px;
-  border-color: #ffffff;
-}
+
 
 .carrouselImage {
   width: 100%;
@@ -38,19 +31,14 @@
   .left-content {
     width: 100%;
   }
-  .boton{
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: normal;
-    width: 124px;
-    height: 48px;
-    background-color: #063012;
-    border-radius: 0;
-  }
+ 
 }
 @media only screen and (min-width: 1001px) {
   .left-content {
     width: 100%;
+  }
+  .carousel-item-container {
+    font-size: 50px;
   }
   .image12{
     width: 1440px;

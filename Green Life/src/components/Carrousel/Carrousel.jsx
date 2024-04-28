@@ -12,6 +12,7 @@ function Carrousel(){
       setIndex(selectedIndex);
 };
 
+
 return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
@@ -22,7 +23,7 @@ return (
           <Carousel.Caption className="right-content ">
             <p className='texto'>Ven a nuesto curso!</p>
             <h3>Pienso, luego existo</h3>
-            <button className='boton'>Visitanos</button>
+           
           </Carousel.Caption>
         </div>
       </Carousel.Item>

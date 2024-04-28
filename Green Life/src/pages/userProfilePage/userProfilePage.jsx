@@ -90,7 +90,6 @@ const UserProfilePage = () => {
             <br />
             <br />
             <img
-            className="profilePicture"
             alt="esacio para resultado de la huella de carbono"
             src="./../../../public/HuellaEjemplo.jpg"
           />
