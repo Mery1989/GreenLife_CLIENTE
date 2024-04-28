@@ -11,7 +11,7 @@ const EventListPage = () => {
         <BannerEvent />
         <hr />
         <EventList/>
-        <ModalEvent/>
+        
         </Container>
     </>
   );
