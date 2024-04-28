@@ -42,7 +42,7 @@ const handleSubmit = (event) => {
     <Container>
       <center>
           <Button onClick={handleModalOpen} className="DetailButton">
-            Calcula tu huella de carbono
+            Calcula tu huella de Carbono
           </Button>
       </center>
 
