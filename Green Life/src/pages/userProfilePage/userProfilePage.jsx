@@ -86,20 +86,24 @@ const UserProfilePage = () => {
         <div className="Profilehuella">
           <h3>Huella de carbono</h3>
           <p>
-            Este es el esquema de tu huella de carbono.
+            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+            turpmaximus.posuere in belief.
             <br />
             <br />
-            <img
-            className="huellaImg"
-            alt="esacio para resultado de la huella de carbono"
-            src="./../../../public/HuellaEjemplo.jpg"
-          />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+            nisi in justo ultrices ullamcorper. Sed nec arcu risus. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Nullam finibus lorem
+            libero
           </p>
-         
+          <img
+            className="profilePicture"
+            alt="esacio para resultado de la huella de carbono"
+            src="https://res.cloudinary.com/ddtolhmab/image/upload/v1709287621/pexels-surene-palvie-2062061_3_fn7reb.jpg"
+          />
         </div>
         <div className="ProfileCosas">
           <h3>Mis cosas</h3>
-          <p>¡Anímate y participa en nuestra comunidad!</p>
+          <p>Anímate y participa en nuestra comunidad.</p>
 
           <Dropdown >
             <Dropdown.Toggle variant="success" id="dropdown-basic" className="pestañaProfile">
