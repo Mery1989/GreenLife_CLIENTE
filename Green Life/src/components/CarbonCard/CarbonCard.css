@@ -81,7 +81,7 @@
     border-color: #FFFFFF;
 
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .carbonPrincipalTitle{
         font-size: 2.5rem;
     }

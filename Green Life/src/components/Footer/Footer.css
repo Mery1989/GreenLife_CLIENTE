@@ -2,7 +2,7 @@
 .footer1{
     background-color: #118639;
     margin: 0;
-    margin-top: -30px;
+    margin-top: 0px;
     color: #fff;
     padding: 25px;
  
@@ -90,5 +90,15 @@
     .proximos-eventos {
         display: none;
     }
+}
+@media screen and (min-width: 1300px) {
+
+    .footer1{
+     
+        margin-top: 125px;
+        
+      
+     
+    }   
 }
  

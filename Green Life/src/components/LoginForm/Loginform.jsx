@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import loginService from '../../services/LoginService';
-
+import "./Loginform.css";
 
 function Loginform() {
   const [username, setUsername] = useState('');
@@ -49,7 +49,7 @@ function Loginform() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </Form.Group>
-      <Button id="button" type="submit">Entrar</Button>
+      <Button id="button" className="botonform" type="submit">Entrar</Button>
     </Form>
   );
 }
