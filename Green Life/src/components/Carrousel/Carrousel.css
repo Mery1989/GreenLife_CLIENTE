@@ -58,12 +58,12 @@
     width: 100%;
   }
   .image12{
-    width: 1920px;
+    width: 2500px;
     height: auto;
   content: url('https://res.cloudinary.com/dduyznqr5/image/upload/c_crop,w_1920,h_600,g_auto/v1713456356/samples/landscapes/girl-urban-view.jpg');
 }
 .image13{
-  width: 1920px;
+  width: 2500px;
   height: auto;
   content: url('https://res.cloudinary.com/dduyznqr5/image/upload/c_fill,w_1920,h_600/v1713456360/samples/landscapes/beach-boat.jpg');
 }
